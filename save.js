@@ -10,7 +10,7 @@ async function saveProgress() {
     score:         score,
     playerX:       player.x,
     playerY:       player.y,
-    unlocked:      Array.from(unlockedCells), // Set 转 Array 才能存
+    unlocked:      Array.from(unlockedCells), 
     savedAt:       firebase.firestore.FieldValue.serverTimestamp()
   };
 
@@ -79,3 +79,5 @@ async function deleteSave() {
     console.error(e);
   }
 }
+
+

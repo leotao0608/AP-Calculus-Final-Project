@@ -54,12 +54,12 @@ async function onLoginSuccess(user) {
     ? `
         <button class="btn-primary" onclick="showLevelSelect()">NEW GAME</button>
         <button class="btn-primary" onclick="continueGame()">CONTINUE</button>
-        <button class="btn-primary" onclick="showScreen('screen-review')">REVIEW</button>
+        <button class="btn-primary" onclick="loadReview()">REVIEW</button>
         <button class="btn-primary" onclick="logout()">SIGN OUT</button>
     `
     : `
         <button class="btn-primary" onclick="showLevelSelect()">NEW GAME</button>
-        <button class="btn-primary" onclick="showScreen('screen-review')">REVIEW</button>
+        <button class="btn-primary" onclick="loadReview()">REVIEW</button>
         <button class="btn-primary" onclick="logout()">SIGN OUT</button>
     `;
 

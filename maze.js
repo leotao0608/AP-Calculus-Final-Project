@@ -68,14 +68,17 @@ function drawMaze() {
           ctx.fillStyle = '#000';
           ctx.fillRect(x, y, TILE, TILE);
         } else {
-          // blocked questions
-          ctx.fillStyle = '#222';
-          ctx.fillRect(x, y, TILE, TILE);
-          ctx.fillStyle    = '#888';
-          ctx.font         = `${TILE * 0.45}px monospace`;
+          const pad = 4;
+          const depth = 4;
+          
+          ctx.fillStyle = '#FFD600';
+          ctx.fillRect(x + pad, y + pad, TILE - pad * 2, TILE - pad * 2);
+
+          ctx.fillStyle    = '#000';
+          ctx.font         = `bold ${TILE * 0.4}px monospace`;
           ctx.textAlign    = 'center';
           ctx.textBaseline = 'middle';
-          ctx.fillText('?', x + TILE / 2, y + TILE / 2);
+          ctx.fillText('?', x + TILE / 2 - 1, y + TILE / 2 - 1);
         }
 
       } else {
@@ -148,6 +151,8 @@ document.addEventListener('keydown', (e) => {
 
   // end
   if (mapData[ny][nx] === 2) {
+    if (isMoving) return;
+    isMoving = true;
     movePlayer(nx, ny);
     setTimeout(() => levelComplete(), 300);
     return;

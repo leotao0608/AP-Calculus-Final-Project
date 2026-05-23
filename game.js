@@ -10,6 +10,7 @@ let isMoving        = false;
 const levels = [
   { num: 1, name: 'Level 1', difficulty: 'Difficulty: ★' },
   { num: 2, name: 'Level 2', difficulty: 'Difficulty: ★★' },
+  { num: 3, name: 'Level 3', difficulty: 'Difficulty: ★★★' },
 ];
 
 function showLevelSelect() {
@@ -26,25 +27,12 @@ function showLevelSelect() {
 }
 
 
-function triggerQuestion(nx, ny) {
-  if (isMoving) return;
-  isMoving    = true;
-  pendingMove = { nx, ny };
-
-  const pool = questions.filter(q => q.difficulty === mapDifficulty);
-  const idx  = Math.floor(Math.random() * pool.length);
-  currentQuestion = pool[idx];
-
-  renderQuestion();
-  document.getElementById('question-card').classList.add('open');
-}
 
 function isQuestionOpen() {
   return document.getElementById('question-card').classList.contains('open');
 }
 
 function renderQuestion() {
-  document.getElementById('hud-topic').textContent = currentQuestion.topic.toUpperCase();
   document.getElementById('q-meta').textContent =
     `Topic: ${currentQuestion.topic}  |  Difficulty: ${'★'.repeat(currentQuestion.difficulty)}`;
 
@@ -53,10 +41,11 @@ function renderQuestion() {
 
   const optionsEl = document.getElementById('q-options');
   optionsEl.innerHTML = '';
-  currentQuestion.options.forEach((opt, i) => {
+  const labels = ['A', 'B', 'C', 'D'];
+currentQuestion.options.forEach((opt, i) => {
     const btn = document.createElement('button');
     btn.className = 'option-btn';
-    btn.innerHTML = `\\(${opt}\\)`;
+    btn.innerHTML = `${labels[i]}. \\(${opt}\\)`;
     btn.onclick = () => selectAnswer(i);
     optionsEl.appendChild(btn);
   });
@@ -85,9 +74,12 @@ async function selectAnswer(index) {
     document.getElementById('hud-hp').textContent = `HP: ${hp}`;
     pendingMove = null; 
     document.getElementById('btn-next').textContent = 'CLOSE';
+
+    saveMistake(currentQuestion, index);
+
     if (hp <= 0) {
         await deleteSave();
-        setTimeout(() => { alert('Game Over!'); resetGame(); }, 500);
+        setTimeout(() => { alert('Game Over!'); resetGame(currentLevel); }, 500);
         return;
     }
   }
@@ -115,19 +107,22 @@ async function startGame(levelNum = 1) {
   document.getElementById('hud-hp').textContent    = 'HP: 3';
   document.getElementById('hud-score').textContent = 'SCORE: 0';
   document.getElementById('question-card').classList.remove('open');
+  
+  document.getElementById('hud-topic').textContent = `LEVEL ${currentLevel}`;
   await loadMap(currentLevel);
 }
 
-async function resetGame() {
+async function resetGame(level) {
     unlockedCells = new Set();
     hp           = 3;
     score        = 0;
-    currentLevel = 1;
+    currentLevel = level;
     isMoving     = false;
     document.getElementById('hud-hp').textContent    = 'HP: 3';
     document.getElementById('hud-score').textContent = 'SCORE: 0';
     document.getElementById('question-card').classList.remove('open');
-    await loadMap(currentLevel);
+    document.getElementById('hud-topic').textContent = `LEVEL ${level}`;
+    await loadMap(level);
 }
 
 async function continueGame() {
@@ -136,21 +131,42 @@ async function continueGame() {
   document.getElementById('question-card').classList.remove('open');
   const loaded = await loadProgress();
   if (!loaded) {
-    
     currentLevel = 1;
     await startGame();
+  }else {
+    document.getElementById('hud-topic').textContent = `LEVEL ${currentLevel}`;
   }
 }
 
 async function levelComplete() {
-  currentLevel++;
-  const res = await fetch(`maps/level${currentLevel}.json`);
-  if (res.ok) {
-    await loadMap(currentLevel);
+  const nextLevel = levels.find(lv => lv.num === currentLevel + 1);
+
+  if (nextLevel) {
+    currentLevel++;
+    await onLoginSuccess(auth.currentUser);
   } else {
-    await deleteSave(); 
-    alert('You finished all levels!');
+    await deleteSave();
     currentLevel = 1;
-    showScreen('screen-menu');
+    await onLoginSuccess(auth.currentUser);
   }
+  alert('🎉 You passed!');
+}
+
+function triggerQuestion(nx, ny) {
+  if (isMoving) return;
+  isMoving    = true;
+  pendingMove = { nx, ny };
+
+  const pool = questions.filter(q => q.difficulty === mapDifficulty);
+  const idx  = Math.floor(Math.random() * pool.length);
+  currentQuestion = pool[idx];
+
+  const alert = document.getElementById('alert-card');
+  alert.classList.add('open');
+
+  setTimeout(() => {
+    alert.classList.remove('open');
+    renderQuestion();
+    document.getElementById('question-card').classList.add('open');
+  }, 1000);
 }
