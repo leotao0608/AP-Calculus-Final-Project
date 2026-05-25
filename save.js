@@ -11,6 +11,7 @@ async function saveProgress() {
     playerX:       player.x,
     playerY:       player.y,
     unlocked:      Array.from(unlockedCells), 
+    usedQuestions: Array.from(usedQuestionIds),
     savedAt:       firebase.firestore.FieldValue.serverTimestamp()
   };
 
@@ -36,13 +37,13 @@ async function loadProgress() {
     hp            = data.hp;
     score         = data.score;
     unlockedCells = new Set(data.unlocked);
+    usedQuestionIds = new Set(data.usedQuestions || []);
 
     document.getElementById('hud-hp').textContent    = `HP: ${hp}`;
     document.getElementById('hud-score').textContent = `SCORE: ${score}`;
 
     await loadMap(currentLevel);
-
-    // 恢复玩家位置
+    //restote player position
     player.x = data.playerX;
     player.y = data.playerY;
     drawMaze();

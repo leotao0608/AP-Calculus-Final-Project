@@ -89,7 +89,7 @@ function renderMistakeList(mistakes) {
     listEl.innerHTML = mistakes.map((m, i) => `
     <div class="mistake-card" style="position:relative">
         <button onclick="removeMistake('${mistakes[i].questionId}', this)" style="position:absolute;top:8px;right:8px;background:none;border:none;color:#888;font-size:1.2rem;cursor:pointer">✕</button>
-        <p class="mistake-meta">${m.topic} · #${i + 1}</p>
+        <p class="mistake-meta">#${i + 1}  ${m.topic}</p>
             <div class="mistake-question">\\(${m.latex}\\)</div>
             <div class="mistake-options">
             

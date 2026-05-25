@@ -6,6 +6,7 @@ let currentLevel    = 1;
 let hp              = 3;
 let score           = 0;
 let isMoving        = false;
+let usedQuestionIds = new Set();
 
 const levels = [
   { num: 1, name: 'Level 1', difficulty: 'Difficulty: ★' },
@@ -98,8 +99,10 @@ function nextQuestion() {
 }
 
 async function startGame(levelNum = 1) {
+  
   currentLevel  = levelNum;
   unlockedCells = new Set();
+  usedQuestionIds = new Set();
   showScreen('screen-game');
   hp       = 3;
   score    = 0;
@@ -114,6 +117,7 @@ async function startGame(levelNum = 1) {
 
 async function resetGame(level) {
     unlockedCells = new Set();
+    usedQuestionIds = new Set();
     hp           = 3;
     score        = 0;
     currentLevel = level;
@@ -157,9 +161,11 @@ function triggerQuestion(nx, ny) {
   isMoving    = true;
   pendingMove = { nx, ny };
 
-  const pool = questions.filter(q => q.difficulty === mapDifficulty);
-  const idx  = Math.floor(Math.random() * pool.length);
+  const pool = questions.filter(q => q.difficulty === mapDifficulty && !usedQuestionIds.has(q.id));
+  if (pool.length === 0) return; // run out of questions
+  const idx = Math.floor(Math.random() * pool.length);
   currentQuestion = pool[idx];
+  usedQuestionIds.add(currentQuestion.id);
 
   const alert = document.getElementById('alert-card');
   alert.classList.add('open');

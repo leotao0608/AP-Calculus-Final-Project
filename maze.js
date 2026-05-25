@@ -6,7 +6,7 @@ let COLS        = 0;
 let ROWS        = 0;
 let player      = { x: 1, y: 1 };
 let unlockedCells = new Set(); 
-
+let mapDifficulty = 1;
 
 // ── load map from json ──────────────────────────────
 async function loadMap(levelNum) {

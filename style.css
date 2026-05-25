@@ -217,7 +217,7 @@ input:focus { outline: none; border-color: #fff; }
 }
 
 .summary-topic { text-transform: capitalize; }
-.summary-count { color: #888; }
+.summary-count { color: #adadad; }
 
 .mistake-card {
   border: 1px solid #333;
@@ -228,8 +228,8 @@ input:focus { outline: none; border-color: #fff; }
 }
 
 .mistake-meta {
-  font-size: 0.75rem;
-  color: #888;
+  font-size: 0.9rem;
+  color: #adadad;
   text-transform: capitalize;
 }
 
