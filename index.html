@@ -94,9 +94,16 @@
           </div>
         </div>
       </div>
+      
       <button class="btn-primary" onclick="showScreen('screen-menu')" id="review-back">BACK</button>
     </div>
-
+      <div id="confirm-card" class="alert-card">
+        <p>Remove this mistake?</p>
+        <div style="display:flex;gap:1rem;justify-content:center;margin-top:1rem">
+          <button class="btn-primary" id="confirm-yes">YES</button>
+          <button class="btn-primary" id="confirm-no">NO</button>
+        </div>
+      </div>
   <!-- Scripts -->
     <script src="firebase.js"></script>
     <script src="auth.js"></script>

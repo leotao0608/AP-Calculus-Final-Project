@@ -87,8 +87,9 @@ function renderMistakeList(mistakes) {
     }
 
     listEl.innerHTML = mistakes.map((m, i) => `
-        <div class="mistake-card">
-            <p class="mistake-meta">${m.topic} · #${i + 1}</p>
+    <div class="mistake-card" style="position:relative">
+        <button onclick="removeMistake('${mistakes[i].questionId}', this)" style="position:absolute;top:8px;right:8px;background:none;border:none;color:#888;font-size:1.2rem;cursor:pointer">✕</button>
+        <p class="mistake-meta">${m.topic} · #${i + 1}</p>
             <div class="mistake-question">\\(${m.latex}\\)</div>
             <div class="mistake-options">
             
@@ -103,4 +104,29 @@ function renderMistakeList(mistakes) {
     `).join('');
 
     MathJax.typesetPromise([listEl]);
+}
+
+async function removeMistake(questionId, btn) {
+  const card = document.getElementById('confirm-card');
+  card.classList.add('open');
+
+  document.getElementById('confirm-yes').onclick = async () => {
+    card.classList.remove('open');
+    const user = auth.currentUser;
+    if (!user) return;
+    try {
+      const snapshot = await db.collection('mistakes')
+        .where('userId', '==', user.uid)
+        .where('questionId', '==', Number(questionId))
+        .get();
+      snapshot.docs.forEach(doc => doc.ref.delete());
+      btn.closest('.mistake-card').remove();
+    } catch (e) {
+      console.error('Failed to remove mistake:', e);
+    }
+  };
+
+  document.getElementById('confirm-no').onclick = () => {
+    card.classList.remove('open');
+  };
 }
