@@ -292,9 +292,6 @@ input:focus { outline: none; border-color: #fff; }
 }
 #confirm-card {
   display: none;
-}
-#confirm-card {
-  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -309,4 +306,7 @@ input:focus { outline: none; border-color: #fff; }
 }
 #confirm-card.open {
   display: block;
+}
+#MathJax_Message, .MathJax_Preview {
+  display: none !important;
 }

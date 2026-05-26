@@ -119,8 +119,15 @@ async function removeMistake(questionId, btn) {
         .where('userId', '==', user.uid)
         .where('questionId', '==', Number(questionId))
         .get();
-      snapshot.docs.forEach(doc => doc.ref.delete());
-      btn.closest('.mistake-card').remove();
+        snapshot.docs.forEach(doc => doc.ref.delete());
+        btn.closest('.mistake-card').remove();
+
+        const remaining = Array.from(document.querySelectorAll('.mistake-card')).map(card => {
+          const meta = card.querySelector('.mistake-meta').textContent.trim();
+          const topic = meta.split('  ')[1];
+          return { topic };
+        });
+        renderSummary(remaining);
     } catch (e) {
       console.error('Failed to remove mistake:', e);
     }
