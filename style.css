@@ -92,13 +92,16 @@ input:focus { outline: none; border-color: #fff; }
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 440px;
+  width: 800px;
   background: #000;
   border: 1px solid #fff;
   padding: 2rem;
   flex-direction: column;
   gap: 1rem;
   z-index: 100;
+
+  max-height: 90vh;
+  overflow-y: visible;
 }
 
 #question-card.open {
@@ -115,6 +118,9 @@ input:focus { outline: none; border-color: #fff; }
   text-align: center;
   min-height: 3rem;
   padding: 0.5rem 0;
+
+  white-space: normal;
+  word-break: break-word;
 }
 
 #q-options {
@@ -132,6 +138,9 @@ input:focus { outline: none; border-color: #fff; }
   font-size: 0.95rem;
   cursor: pointer;
   text-align: left;
+
+  white-space: normal;
+  word-break: break-word;
 }
 .option-btn:hover:not(:disabled) { background: #222; }
 .option-btn.correct { background: #fff; color: #000; }

@@ -7,19 +7,21 @@ let ROWS        = 0;
 let player      = { x: 1, y: 1 };
 let unlockedCells = new Set(); 
 let mapDifficulty = 1;
+let questions = [];
 
 // ── load map from json ──────────────────────────────
 async function loadMap(levelNum) {
   const res  = await fetch(`maps/level${levelNum}.json`);
   const data = await res.json();
 
-    mapData       = data.grid;
-    TILE          = data.tileSize;
-    COLS          = data.cols;
-    ROWS          = data.rows;
-    player        = { ...data.start };
-    mapDifficulty = data.difficulty;
-
+  mapData       = data.grid;
+  TILE          = data.tileSize;
+  COLS          = data.cols;
+  ROWS          = data.rows;
+  player        = { ...data.start };
+  mapDifficulty = data.difficulty;
+  const qRes  = await fetch(`questions/difficulty${mapDifficulty}.json`);
+  questions   = await qRes.json();
   initMaze();
 }
 

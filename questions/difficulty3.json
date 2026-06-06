@@ -1,0 +1,436 @@
+[
+  {
+    "id": 300,
+    "topic": "definition of derivative",
+    "latex": "\\text{For the function }f(x)=x^2+2,\\text{ find the slope of the secant line between }x=-2\\text{ and }x=5.",
+    "options": ["9", "7", "5", "3"],
+    "answerIndex": 1
+  },
+  {
+    "id": 301,
+    "topic": "definition of derivative",
+    "latex": "\\text{For the function }f(x)=x^2-4,\\text{ find the slope of the secant line between }x=-4\\text{ and }x=-1.",
+    "options": ["-3", "-6", "-5", "-4"],
+    "answerIndex": 2
+  },
+  {
+    "id": 302,
+    "topic": "definition of derivative",
+    "latex": "\\text{For the function }f(x)=x^2+4x-8,\\text{ find the slope of the secant line between }x=-6\\text{ and }x=-1.",
+    "options": ["-5", "-1", "-7", "1"],
+    "answerIndex": 1
+  },
+  {
+    "id": 303,
+    "topic": "definition of derivative",
+    "latex": "\\text{For the function }f(x)=x^2+3,\\text{ find the slope of the secant line between }x=2\\text{ and }x=4.",
+    "options": ["4", "8", "6", "2"],
+    "answerIndex": 2
+  },
+  {
+    "id": 304,
+    "topic": "definition of derivative",
+    "latex": "\\text{For the function }f(x)=x^2+5x-9,\\text{ find the slope of the secant line between }x=-7\\text{ and }x=4.",
+    "options": ["5", "7", "2", "0"],
+    "answerIndex": 2
+  },
+  {
+    "id": 305,
+    "topic": "definition of derivative",
+    "latex": "\\text{For the function }f(x)=-x^2-2x+5,\\text{ find the slope of the secant line between }x=-4\\text{ and }x=2.",
+    "options": ["-2", "0", "2", "-4"],
+    "answerIndex": 1
+  },
+  {
+    "id": 306,
+    "topic": "definition of derivative",
+    "latex": "\\text{Given the function }f(x)=5\\sec(x),\\text{ write an expression that represents }f'(x)\\text{ using the limit definition.}",
+    "options": [
+      "\\lim_{h\\to0}\\frac{5\\sec(x+h)-5\\sec(x)}{h}",
+      "\\lim_{h\\to0}\\frac{5\\sec(h)-5\\sec(x)}{h}",
+      "\\lim_{x\\to0}\\frac{5\\sec(x)-5\\sec(0)}{x}",
+      "\\lim_{h\\to0}\\frac{5\\sec(x+h)}{h}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 307,
+    "topic": "definition of derivative",
+    "latex": "\\text{Given the function }f(x)=\\ln(x-3),\\text{ write an expression that represents }f'(x)\\text{ using the limit definition.}",
+    "options": [
+      "\\lim_{h\\to0}\\frac{\\ln(x+h-3)-\\ln(x-3)}{h}",
+      "\\lim_{h\\to0}\\frac{\\ln(h-3)-\\ln(x-3)}{h}",
+      "\\lim_{x\\to0}\\frac{\\ln(x-3)}{x}",
+      "\\lim_{h\\to0}\\frac{\\ln(x+h-3)}{h}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 308,
+    "topic": "definition of derivative",
+    "latex": "\\text{Given the function }f(x)=e^x,\\text{ write an expression that represents }f'(x)\\text{ using the limit definition.}",
+    "options": [
+      "\\lim_{h\\to0}\\frac{e^h-e^x}{h}",
+      "\\lim_{h\\to0}\\frac{e^{x+h}}{h}",
+      "\\lim_{h\\to0}\\frac{e^{x+h}-e^x}{h}",
+      "\\lim_{x\\to0}\\frac{e^x-1}{x}"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 309,
+    "topic": "definition of derivative",
+    "latex": "\\text{Given the function }f(x)=\\sqrt{x-3},\\text{ determine }f'(4)\\text{ using the limit definition.}",
+    "options": [
+      "\\lim_{h\\to0}\\frac{\\sqrt{1+h}}{h}",
+      "\\lim_{h\\to0}\\frac{\\sqrt{4+h}-1}{h}",
+      "\\lim_{h\\to0}\\frac{\\sqrt{h-3}-1}{h}",
+      "\\lim_{h\\to0}\\frac{\\sqrt{1+h}-1}{h}"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": 310,
+    "topic": "definition of derivative",
+    "latex": "\\text{Given the function }f(x)=2x^5,\\text{ determine the instantaneous rate of change at }x=8\\text{ using the limit definition.}",
+    "options": [
+      "\\lim_{h\\to0}\\frac{2(8+h)^5-2\\cdot8^5}{h}",
+      "\\lim_{h\\to0}\\frac{2(8+h)^5}{h}",
+      "\\lim_{x\\to8}\\frac{2x^5-2\\cdot8^5}{x}",
+      "\\lim_{h\\to0}\\frac{2h^5-2\\cdot8^5}{h}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 311,
+    "topic": "definition of derivative",
+    "latex": "\\text{Given the function }f(x)=\\sqrt{x+3},\\text{ determine the instantaneous rate of change at }x=8\\text{ using the limit definition.}",
+    "options": [
+      "\\lim_{h\\to0}\\frac{\\sqrt{11+h}-\\sqrt{11}}{h}",
+      "\\lim_{h\\to0}\\frac{\\sqrt{8+h}-\\sqrt{11}}{h}",
+      "\\lim_{h\\to0}\\frac{\\sqrt{11+h}}{h}",
+      "\\lim_{x\\to8}\\frac{\\sqrt{x+3}}{x}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 312,
+    "topic": "definition of derivative",
+    "latex": "\\text{Given the function }f(x)=5x^5+2x^4,\\text{ write an expression that represents }f'(x)\\text{ using the limit definition.}",
+    "options": [
+      "\\lim_{h\\to0}\\frac{5h^5+2h^4-(5x^5+2x^4)}{h}",
+      "\\lim_{x\\to0}\\frac{5x^5+2x^4}{x}",
+      "\\lim_{h\\to0}\\frac{5(x+h)^5+2(x+h)^4-(5x^5+2x^4)}{h}",
+      "\\lim_{h\\to0}\\frac{5(x+h)^5+2(x+h)^4}{h}"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 313,
+    "topic": "definition of derivative",
+    "latex": "\\text{For the function }f(x)=x^2+2,\\text{ find the slope of the tangent line at }x=1.",
+    "options": ["4", "3", "1", "2"],
+    "answerIndex": 3
+  },
+  {
+    "id": 314,
+    "topic": "definition of derivative",
+    "latex": "\\text{For the function }f(x)=x^2+5,\\text{ find the slope of the tangent line at }x=5.",
+    "options": ["12", "5", "10", "8"],
+    "answerIndex": 2
+  },
+  {
+    "id": 315,
+    "topic": "definition of derivative",
+    "latex": "\\text{For the function }f(x)=10x+3,\\text{ find the slope of the tangent line at }x=11.",
+    "options": ["11", "10", "13", "1"],
+    "answerIndex": 1
+  },
+  {
+    "id": 316,
+    "topic": "definition of derivative",
+    "latex": "\\text{For the function }f(x)=x^2-5,\\text{ find the equation of the tangent line at }x=-5.",
+    "options": [
+      "y=-10x-30",
+      "y=-10x-25",
+      "y=-5x-30",
+      "y=10x+20"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 317,
+    "topic": "definition of derivative",
+    "latex": "\\text{For the function }f(x)=-6x^2-3x-4,\\text{ find the equation of the tangent line at }x=-12.",
+    "options": [
+      "y=141x+1676",
+      "y=144x+1724",
+      "y=141x+1688",
+      "y=144x+1688"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 318,
+    "topic": "definition of derivative",
+    "latex": "\\text{For the function }f(x)=x^2-11,\\text{ find the equation of the tangent line at }x=-7.",
+    "options": [
+      "y=-14x-60",
+      "y=14x-60",
+      "y=-14x-53",
+      "y=-7x-11"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 319,
+    "topic": "definition of derivative",
+    "latex": "\\text{For the function }f(x)=x^2+6,\\text{ find the equation of the tangent line at }x=-2.",
+    "options": [
+      "y=-2x+10",
+      "y=-4x+6",
+      "y=4x+2",
+      "y=-4x+2"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": 320,
+    "topic": "power rule",
+    "latex": "\\text{For the equation }y=4x^4,\\text{ find }\\frac{dy}{dx}.",
+    "options": ["16x^3", "4x^3", "12x^3", "16x^4"],
+    "answerIndex": 0
+  },
+  {
+    "id": 321,
+    "topic": "power rule",
+    "latex": "\\text{For the function }f(x)=-6x^5,\\text{ find }f'(x).",
+    "options": ["-24x^4", "-30x^4", "-30x^5", "-6x^4"],
+    "answerIndex": 1
+  },
+  {
+    "id": 322,
+    "topic": "power rule",
+    "latex": "\\text{For the function }f(x)=6x,\\text{ find }f'(x).",
+    "options": ["1", "0", "6", "x"],
+    "answerIndex": 2
+  },
+  {
+    "id": 323,
+    "topic": "power rule",
+    "latex": "\\text{For the equation }y=3x^4,\\text{ find }\\frac{dy}{dx}.",
+    "options": ["12x^3", "9x^3", "3x^3", "12x^4"],
+    "answerIndex": 0
+  },
+  {
+    "id": 324,
+    "topic": "power rule",
+    "latex": "\\text{For the equation }y=-6x^5,\\text{ find }\\frac{dy}{dx}.",
+    "options": ["-30x^4", "-24x^4", "-6x^4", "-30x^5"],
+    "answerIndex": 0
+  },
+  {
+    "id": 325,
+    "topic": "power rule",
+    "latex": "\\text{For the equation }y=-8x^4-4x^2+4,\\text{ find }\\frac{dy}{dx}.",
+    "options": ["-32x^3-8x", "-24x^3-8x", "-32x^3-4x", "-32x^4-8x"],
+    "answerIndex": 0
+  },
+  {
+    "id": 326,
+    "topic": "power rule",
+    "latex": "\\text{For the equation }y=5x^5+2x^4-3x^3+9x+8,\\text{ find }\\frac{dy}{dx}.",
+    "options": ["25x^4+8x^3-9x^2+9", "20x^4+8x^3-9x^2+9", "25x^4+6x^3-9x^2+9", "25x^5+8x^3-9x^2+9"],
+    "answerIndex": 0
+  },
+  {
+    "id": 327,
+    "topic": "power rule",
+    "latex": "\\text{For the equation }y=-x^5-3x^4-1,\\text{ find }\\frac{dy}{dx}.",
+    "options": ["-5x^4-12x^3", "-5x^4-9x^3", "-x^4-12x^3", "-5x^5-12x^3"],
+    "answerIndex": 0
+  },
+  {
+    "id": 328,
+    "topic": "power rule",
+    "latex": "\\text{For the equation }y=-3x^5-7x^4-3x^3-3x^2-3x+9,\\text{ find }\\frac{dy}{dx}.",
+    "options": ["-15x^4-28x^3-9x^2-6x-3", "-15x^4-21x^3-9x^2-6x-3", "-12x^4-28x^3-9x^2-6x-3", "-15x^4-28x^3-9x^2-3x-3"],
+    "answerIndex": 0
+  },
+  {
+    "id": 329,
+    "topic": "power rule",
+    "latex": "\\text{For the function }f(x)=-2x^4+4x^3,\\text{ evaluate }f'(1).",
+    "options": ["4", "8", "0", "-4"],
+    "answerIndex": 0
+  },
+  {
+    "id": 330,
+    "topic": "power rule",
+    "latex": "\\text{For the function }f(x)=-5x+1,\\text{ evaluate }f'(3).",
+    "options": ["5", "-3", "-5", "1"],
+    "answerIndex": 2
+  },
+  {
+    "id": 331,
+    "topic": "power rule",
+    "latex": "\\text{For the equation }y=3x^3+4,\\text{ evaluate }\\frac{dy}{dx}\\text{ when }x=2.",
+    "options": ["36", "24", "12", "48"],
+    "answerIndex": 0
+  },
+  {
+    "id": 332,
+    "topic": "power rule",
+    "latex": "\\text{For the equation }y=2x^5+2x^3,\\text{ evaluate }\\frac{dy}{dx}\\text{ when }x=-1.",
+    "options": ["-4", "-16", "4", "16"],
+    "answerIndex": 1
+  },
+  {
+    "id": 333,
+    "topic": "power rule",
+    "latex": "\\text{Given }f(x)=4x^2+5,\\text{ find the equation of the tangent line at }x=-3.",
+    "options": ["y=-24x-31", "y=-24x-67", "y=24x-31", "y=-12x-31"],
+    "answerIndex": 1
+  },
+  {
+    "id": 334,
+    "topic": "power rule",
+    "latex": "\\text{Given }f(x)=-x^4+4x^2-4x,\\text{ find the slope of the tangent line at }x=-2.",
+    "options": ["20", "28", "12", "36"],
+    "answerIndex": 0
+  },
+  {
+    "id": 335,
+    "topic": "power rule",
+    "latex": "\\text{Given }f(x)=x^5-4x^3,\\text{ find the equation of the tangent line at }x=1.",
+    "options": ["y=-7x+4", "y=-7x+3", "y=7x-4", "y=-3x-4"],
+    "answerIndex": 0
+  },
+  {
+    "id": 336,
+    "topic": "power rule",
+    "latex": "\\text{Given }f(x)=4x^2+2,\\text{ find the equation of the tangent line at }x=2.",
+    "options": ["y=16x-14", "y=8x+2", "y=16x+18", "y=8x-14"],
+    "answerIndex": 0
+  },
+  {
+    "id": 337,
+    "topic": "power rule",
+    "latex": "\\text{Given }f(x)=x^3-6x^2+10x-14,\\text{ find all points where the tangent slope is }1.",
+    "options": [
+      "\\{(1,-9),(3,-11)\\}",
+      "\\{(1,-10),(3,-11)\\}",
+      "\\{(1,-9),(2,-10)\\}",
+      "\\{(3,-11)\\}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 338,
+    "topic": "power rule",
+    "latex": "\\text{Given }f(x)=x^3+9x^2+18x-8,\\text{ find all points where the tangent slope is }3.",
+    "options": [
+      "\\{(-2,-28),(-4,0)\\}",
+      "\\{(-2,-24),(-4,0)\\}",
+      "\\{(-2,-28),(-4,-8)\\}",
+      "\\{(-2,-28)\\}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 339,
+    "topic": "power rule",
+    "latex": "\\text{Given }f(x)=x^3-9x^2+26x+5,\\text{ find all points where the tangent slope is }2.",
+    "options": [
+      "\\{(2,33),(4,29)\\}",
+      "\\{(2,25),(4,29)\\}",
+      "\\{(2,33),(4,21)\\}",
+      "\\{(2,33)\\}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 340,
+    "topic": "power rule",
+    "latex": "\\text{Given }f(x)=x^3-3x^2-5x-9,\\text{ find all points where the tangent slope is }4.",
+    "options": [
+      "\\{(-1,-12),(3,-24)\\}",
+      "\\{(-1,-10),(3,-24)\\}",
+      "\\{(-1,-12),(3,-20)\\}",
+      "\\{(-1,-12)\\}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 341,
+    "topic": "power rule",
+    "latex": "\\text{Given }f(x)=x^3+3x^2-5x-17,\\text{ find all points where the tangent slope is }-5.",
+    "options": [
+      "\\{(-2,-7),(0,-17)\\}",
+      "\\{(-2,-3),(0,-17)\\}",
+      "\\{(-2,-7),(0,-15)\\}",
+      "\\{(0,-17)\\}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 342,
+    "topic": "power rule",
+    "latex": "\\text{Given }f(x)=x^{-3}-x^{-1},\\text{ find }f'(4).\\text{ Express your answer as a single fraction.}",
+    "options": [
+      "\\frac{13}{1024}",
+      "\\frac{11}{1024}",
+      "\\frac{7}{1024}",
+      "\\frac{15}{1024}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 343,
+    "topic": "power rule",
+    "latex": "\\text{Given }f(x)=2x^{-3}+x^{-1},\\text{ find }f'(4).\\text{ Express your answer as a single fraction.}",
+    "options": [
+      "-\\frac{7}{128}",
+      "-\\frac{11}{128}",
+      "-\\frac{5}{128}",
+      "-\\frac{9}{128}"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 344,
+    "topic": "power rule",
+    "latex": "\\text{Given }f(x)=-4\\sqrt{x}-2x^{-3},\\text{ find }f'(9).\\text{ Express your answer as a single fraction.}",
+    "options": [
+      "-\\frac{1459}{6561}",
+      "-\\frac{1}{6}",
+      "-\\frac{1093}{6561}",
+      "-\\frac{1823}{6561}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 345,
+    "topic": "power rule",
+    "latex": "\\text{Given }f(x)=-\\frac{1}{\\sqrt[4]{x}}-\\frac{3}{2\\sqrt{x}},\\text{ find }f'(2).\\text{ Express your answer in simplest radical form.}",
+    "options": [
+      "\\frac{7\\sqrt[4]{2}}{32}+\\frac{3\\sqrt{2}}{8}",
+      "\\frac{5\\sqrt[4]{2}}{32}+\\frac{3\\sqrt{2}}{8}",
+      "\\frac{7\\sqrt[4]{2}}{16}+\\frac{3\\sqrt{2}}{8}",
+      "\\frac{7\\sqrt[4]{2}}{32}+\\frac{\\sqrt{2}}{8}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 346,
+    "topic": "power rule",
+    "latex": "\\text{Given }f(x)=\\sqrt{x}-2x^{-3},\\text{ find }f'(3).\\text{ Express your answer in simplest radical form.}",
+    "options": [
+      "\\frac{1}{2\\sqrt{3}}+\\frac{2}{9}",
+      "\\frac{1}{2\\sqrt{3}}+\\frac{2}{27}",
+      "\\frac{1}{\\sqrt{3}}+\\frac{2}{27}",
+      "\\frac{1}{2\\sqrt{3}}+\\frac{1}{27}"
+    ],
+    "answerIndex": 1
+  }
+]

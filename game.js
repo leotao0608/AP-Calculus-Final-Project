@@ -160,8 +160,7 @@ function triggerQuestion(nx, ny) {
   if (isMoving) return;
   isMoving    = true;
   pendingMove = { nx, ny };
-
-  const pool = questions.filter(q => q.difficulty === mapDifficulty && !usedQuestionIds.has(q.id));
+  const pool = questions.filter(q => !usedQuestionIds.has(q.id));
   if (pool.length === 0) return; // run out of questions
   const idx = Math.floor(Math.random() * pool.length);
   currentQuestion = pool[idx];

@@ -1,0 +1,939 @@
+[
+  {
+    "id": 100,
+    "topic": "factoring",
+    "latex": "28x^3y^7z^2-7xy^4",
+    "options": [
+      "28xy^4(x^2y^3z^2-1)",
+      "7xy^4(4x^2y^2z^2-1)",
+      "7x^3y^4(4y^3z^2-1)",
+      "7xy^4(4x^2y^3z^2-1)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": 101,
+    "topic": "factoring",
+    "latex": "-28x^4y^3z^3-21x^6y^6z^4",
+    "options": [
+      "-7x^4y^3z^2(4z+3x^2y^3z^2)",
+      "-21x^4y^3z^3(4+3x^2y^3z)",
+      "-7x^4y^3z^3(4+3x^2y^3z)",
+      "-7x^3y^3z^3(4x+3x^3y^3z)"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 102,
+    "topic": "factoring",
+    "latex": "36x^2y^4z^5+3xyz^4",
+    "options": [
+      "3xyz^4(12x^2y^3z+1)",
+      "9xyz^4(4xy^3z+1)",
+      "3xyz^5(12xy^3+1)",
+      "3xyz^4(12xy^3z+1)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": 103,
+    "topic": "factoring",
+    "latex": "5x-6=0",
+    "options": [
+      "\\frac{6}{5}",
+      "-\\frac{6}{5}",
+      "\\frac{5}{6}",
+      "-\\frac{5}{6}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 104,
+    "topic": "factoring",
+    "latex": "9x-11=0",
+    "options": [
+      "\\frac{9}{11}",
+      "-\\frac{11}{9}",
+      "-\\frac{9}{11}",
+      "\\frac{11}{9}"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": 105,
+    "topic": "factoring",
+    "latex": "36x^2-121=0",
+    "options": [
+      "\\left\\{-6,6\\right\\}",
+      "\\left\\{-\\frac{6}{11},\\frac{6}{11}\\right\\}",
+      "\\left\\{-11,11\\right\\}",
+      "\\left\\{-\\frac{11}{6},\\frac{11}{6}\\right\\}"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": 106,
+    "topic": "factoring",
+    "latex": "x(2x+3)(4x^2-81)=0",
+    "options": [
+      "\\left\\{0,-\\frac{3}{2},9,-9\\right\\}",
+      "\\left\\{0,\\frac{3}{2},\\frac{9}{2},-\\frac{9}{2}\\right\\}",
+      "\\left\\{0,-\\frac{3}{2},\\frac{9}{2},-\\frac{9}{2}\\right\\}",
+      "\\left\\{-\\frac{3}{2},\\frac{9}{2},-\\frac{9}{2}\\right\\}"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 107,
+    "topic": "factoring",
+    "latex": "2(3x+8)(x^2-81)=0",
+    "options": [
+      "\\left\\{\\frac{8}{3},9,-9\\right\\}",
+      "\\left\\{-\\frac{3}{8},9,-9\\right\\}",
+      "\\left\\{-\\frac{8}{3},9,-9\\right\\}",
+      "\\left\\{-\\frac{8}{3},81,-81\\right\\}"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 108,
+    "topic": "factoring",
+    "latex": "3(x+3)(64x^2-49)=0",
+    "options": [
+      "\\left\\{-3,\\frac{7}{8},-\\frac{7}{8}\\right\\}",
+      "\\left\\{-3,7,-7\\right\\}",
+      "\\left\\{3,\\frac{7}{8},-\\frac{7}{8}\\right\\}",
+      "\\left\\{-3,\\frac{8}{7},-\\frac{8}{7}\\right\\}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 109,
+    "topic": "factoring",
+    "latex": "-x(x^2-1)(49x^2-16)=0",
+    "options": [
+      "\\left\\{0,1,-1,\\frac{7}{4},-\\frac{7}{4}\\right\\}",
+      "\\left\\{0,1,-1,4,-4\\right\\}",
+      "\\left\\{0,1,-1,\\frac{4}{7},-\\frac{4}{7}\\right\\}",
+      "\\left\\{1,-1,\\frac{4}{7},-\\frac{4}{7}\\right\\}"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 110,
+    "topic": "factoring",
+    "latex": "5x^3-5x=0",
+    "options": [
+      "\\left\\{0,1\\right\\}",
+      "\\left\\{-1,1\\right\\}",
+      "\\left\\{-1,0\\right\\}",
+      "\\left\\{-1,0,1\\right\\}"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": 111,
+    "topic": "factoring",
+    "latex": "-x^5-2x^4+25x^3+50x^2=0",
+    "options": [
+        "\\left\\{-5,5\\right\\}",
+        "\\left\\{0,5,-5\\right\\}",
+        "\\left\\{0,-2,5\\right\\}",
+        "\\left\\{0,-2,-5,5\\right\\}"
+    ],
+    "answerIndex": 3
+    },
+  {
+    "id": 112,
+    "topic": "factoring",
+    "latex": "12x^3+10x^2-36x-30=0",
+    "options": [
+      "\\left\\{-\\frac{5}{3},-3,3\\right\\}",
+      "\\left\\{\\frac{5}{3},-\\sqrt{3},\\sqrt{3}\\right\\}",
+      "\\left\\{-\\frac{5}{3},-\\sqrt{3},\\sqrt{3}\\right\\}",
+      "\\left\\{-\\frac{3}{5},-\\sqrt{3},\\sqrt{3}\\right\\}"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 113,
+    "topic": "factoring",
+    "latex": "10x^3+8x^2+40x+32=0",
+    "options": [
+      "\\left\\{-4\\right\\}",
+      "\\left\\{-\\frac{5}{4}\\right\\}",
+      "\\left\\{\\frac{4}{5}\\right\\}",
+      "\\left\\{-\\frac{4}{5}\\right\\}"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": 114,
+    "topic": "factoring",
+    "latex": "8x^3+28x^2=0",
+    "options": [
+      "\\left\\{0,-\\frac{7}{2}\\right\\}",
+      "\\left\\{0,\\frac{7}{2}\\right\\}",
+      "\\left\\{0,-7\\right\\}",
+      "\\left\\{-\\frac{7}{2}\\right\\}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 115,
+    "topic": "factoring",
+    "latex": "2x^2+x-4=-6x-7",
+    "options": [
+        "\\left\\{-3,-\\frac{1}{2}\\right\\}",
+        "\\left\\{-3,\\frac{1}{2}\\right\\}",
+        "\\left\\{3,-\\frac{1}{2}\\right\\}",
+        "\\left\\{3,\\frac{1}{2}\\right\\}"
+    ],
+    "answerIndex": 0
+    },
+  {
+    "id": 116,
+    "topic": "factoring",
+    "latex": "2x^2+7x+5",
+    "options": [
+      "(2x+1)(x+5)",
+      "(2x-5)(x-1)",
+      "(x+5)(x+2)",
+      "(2x+5)(x+1)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": 117,
+    "topic": "factoring",
+    "latex": "5x^2-24x+27",
+    "options": [
+      "(5x-3)(x-9)",
+      "(5x+9)(x+3)",
+      "(5x-9)(x-3)",
+      "(x-3)(x-9)"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 118,
+    "topic": "factoring",
+    "latex": "4x^{\\frac{4}{3}}+22=1046",
+    "options": [
+      "256",
+      "32",
+      "64",
+      "16"
+    ],
+    "answerIndex": 2
+  },
+    {
+        "id": 119,
+        "topic": "factoring",
+        "latex": "4x^{\\frac{2}{3}}+28=92",
+        "options": [
+            "16",
+            "32",
+            "64",
+            "128"
+        ],
+        "answerIndex": 2
+    },
+    {
+        "id": 120,
+        "topic": "factoring",
+        "latex": "2x^{\\frac{6}{7}}-7=121",
+        "options": [
+            "64",
+            "128",
+            "256",
+            "512"
+        ],
+        "answerIndex": 1
+    },
+  {
+    "id": 121,
+    "topic": "function composition",
+    "latex": "f(x)=4x-14,\\ g(x)=x^2-4x-3,\\ f(g(x))",
+    "options": [
+      "4x^2-16x-26",
+      "4x^2-20x-26",
+      "4x^2-16x-14",
+      "4x^2-16x-22"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 122,
+    "topic": "function composition",
+    "latex": "f(x)=x+12,\\ g(x)=2x^2+2x+14,\\ f(g(x))",
+    "options": [
+      "2x^2+2x+14",
+      "2x^2+2x+24",
+      "2x^2+4x+26",
+      "2x^2+2x+26"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": 123,
+    "topic": "function composition",
+    "latex": "f(x)=x^2-5x+4,\\ g(x)=-x+5,\\ f(g(x))",
+    "options": [
+      "x^2-10x+24",
+      "x^2-6x+20",
+      "x^2-10x+25",
+      "x^2-5x+4"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": 124,
+    "topic": "function composition",
+    "latex": "f(x)=-2x+9,\\ g(x)=x^2+x+1,\\ (g\\circ f)(x)",
+    "options": [
+      "4x^2-28x+81",
+      "4x^2-32x+91",
+      "4x^2-36x+85",
+      "4x^2-32x+85"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": 125,
+    "topic": "function composition",
+    "latex": "f(x)=-x+5,\\ g(x)=x^2-6x-7,\\ (g\\circ f)(x)",
+    "options": [
+      "x^2-10x+18",
+      "x^2-14x+30",
+      "x^2-16x+38",
+      "x^2-12x+20"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 126,
+    "topic": "function composition",
+    "latex": "f(x)=2x^2-5x+12,\\ g(x)=-3x-3,\\ f(g(0))",
+    "options": [
+      "27",
+      "15",
+      "45",
+      "21"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 127,
+    "topic": "function composition",
+    "latex": "f(x)=x^2-7x+13,\\ g(x)=-2x+8,\\ g(f(2))",
+    "options": [
+      "0",
+      "4",
+      "2",
+      "-2"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 128,
+    "topic": "function composition",
+    "latex": "f(x)=-5x+3,\\ g(x)=2x^2+5x-14,\\ g(f(2))",
+    "options": [
+      "50",
+      "42",
+      "49",
+      "46"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 129,
+    "topic": "logarithmic functions",
+    "latex": "\\log_{9}(729)=x",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 130,
+    "topic": "logarithmic functions",
+    "latex": "\\log_{3}(243)=x",
+    "options": [
+      "5",
+      "3",
+      "6",
+      "4"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 131,
+    "topic": "logarithmic functions",
+    "latex": "\\log_{5}(x)=2",
+    "options": [
+      "25",
+      "125",
+      "5",
+      "10"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 132,
+    "topic": "logarithmic functions",
+    "latex": "\\log_{3}(729)=x",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 133,
+    "topic": "logarithmic functions",
+    "latex": "\\log_{x}(9)=\\frac{2}{3}",
+    "options": [
+      "9",
+      "81",
+      "3",
+      "27"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": 134,
+    "topic": "logarithmic functions",
+    "latex": "\\log_{16}(x)=\\frac{1}{2}",
+    "options": [
+      "8",
+      "16",
+      "4",
+      "2"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 135,
+    "topic": "logarithmic functions",
+    "latex": "\\log_{x}(729)=\\frac{6}{5}",
+    "options": [
+      "27",
+      "81",
+      "243",
+      "9"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 136,
+    "topic": "logarithmic functions",
+    "latex": "\\log_{16}(x)=-\\frac{5}{4}",
+    "options": [
+      "\\frac{1}{16}",
+      "\\frac{1}{64}",
+      "\\frac{1}{32}",
+      "\\frac{1}{8}"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 137,
+    "topic": "logarithmic functions",
+    "latex": "\\log(x^2-5x+6)=\\frac{3}{8}",
+    "options": [
+      "x^2-5x+6=10^{3/8}",
+      "\\log(x^2-5x+6)=8/3",
+      "10^{x^2-5x+6}=3/8",
+      "x^2-5x+6=3/8"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 138,
+    "topic": "logarithmic functions",
+    "latex": "\\log_{2}(256)",
+    "options": [
+      "7",
+      "6",
+      "9",
+      "8"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": 139,
+    "topic": "logarithmic functions",
+    "latex": "\\log_{6}(216)",
+    "options": [
+      "5",
+      "3",
+      "4",
+      "2"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 140,
+    "topic": "logarithmic functions",
+    "latex": "\\log_{3}(243)",
+    "options": [
+      "6",
+      "4",
+      "3",
+      "5"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": 141,
+    "topic": "logarithmic functions",
+    "latex": "\\log_{81}(1/27)",
+    "options": [
+      "1/3",
+      "-2/3",
+      "-1/3",
+      "2/3"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 142,
+    "topic": "logarithmic functions",
+    "latex": "\\log_{27}(1/243)",
+    "options": [
+      "-1/3",
+      "-4/3",
+      "-2/3",
+      "-5/3"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 143,
+    "topic": "logarithmic functions",
+    "latex": "\\log_{243}(1/9)",
+    "options": [
+      "-3/2",
+      "-1/2",
+      "-2/3",
+      "-1/3"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 144,
+    "topic": "logarithmic functions",
+    "latex": "\\log_{125}(1/25)",
+    "options": [
+      "-1/3",
+      "-2/3",
+      "-4/3",
+      "-3/2"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 145,
+    "topic": "logarithmic functions",
+    "latex": "\\log y + 4\\log r",
+    "options": [
+      "\\log(y+4r)",
+      "\\log(yr^4)",
+      "\\log(y^4+r^4)",
+      "\\log(y^4r)"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 146,
+    "topic": "logarithmic functions",
+    "latex": "a\\log r - 5\\log k",
+    "options": [
+      "\\log(r^{a-5}k)",
+      "\\log(r^a k^5)",
+      "\\log\\left(\\frac{k^5}{r^a}\\right)",
+      "\\log\\left(\\frac{r^a}{k^5}\\right)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": 147,
+    "topic": "logarithmic functions",
+    "latex": "\\log d + 7\\log y",
+    "options": [
+      "\\log(d^7y)",
+      "\\log(d+y^7)",
+      "\\log(dy^7)",
+      "\\log(d^7+y)"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 148,
+    "topic": "logarithmic functions",
+    "latex": "2\\log r - 3\\log q",
+    "options": [
+      "\\log(r-q)",
+      "\\log\\left(\\frac{r^2}{q^3}\\right)",
+      "\\log(r^2q^3)",
+      "\\log\\left(\\frac{q^3}{r^2}\\right)"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 149,
+    "topic": "logarithmic functions",
+    "latex": "4\\log z + 6\\log q",
+    "options": [
+      "\\log(zq^6)",
+      "\\log(z^6q^4)",
+      "\\log(z+q)",
+      "\\log(z^4q^6)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": 150,
+    "topic": "logarithmic functions",
+    "latex": "\\log_b 3 + 5\\log_b 2",
+    "options": [
+      "\\log_b(3+2^5)",
+      "\\log_b(3^5\\cdot 2)",
+      "\\log_b(6^5)",
+      "\\log_b(3\\cdot 2^5)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": 151,
+    "topic": "logarithmic functions",
+    "latex": "2\\log_b 3 + \\log_b 6",
+    "options": [
+      "\\log_b(3\\cdot 6^2)",
+      "\\log_b(9+6)",
+      "\\log_b(18^2)",
+      "\\log_b(3^2\\cdot 6)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": 152,
+    "topic": "logarithmic functions",
+    "latex": "\\log_b 6 - \\log_b 2",
+    "options": [
+      "\\log_b 3",
+      "\\log_b 2",
+      "\\log_b 12",
+      "\\log_b 4"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 153,
+    "topic": "logarithmic functions",
+    "latex": "\\log\\left(\\frac{y^2\\sqrt[3]{z}}{x^3}\\right)",
+    "options": [
+      "2\\log y + \\frac{1}{3}\\log z - 3\\log x",
+      "2\\log y - 3\\log z + \\log x",
+      "\\log(y^2z/x^3)",
+      "\\log y + \\log z - \\log x"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 154,
+    "topic": "logarithmic functions",
+    "latex": "\\log\\left(\\frac{y^3}{\\sqrt[3]{z^5}x^2}\\right)",
+    "options": [
+      "\\log(y^3z^5x^2)",
+      "3\\log y - \\frac{5}{3}\\log z - 2\\log x",
+      "\\log y - \\log z - \\log x",
+      "3\\log y + \\frac{5}{3}\\log z - 2\\log x"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 155,
+    "topic": "logarithmic functions",
+    "latex": "\\log\\left(\\frac{y^5\\sqrt[3]{z}}{x^2}\\right)",
+    "options": [
+      "5\\log y + \\frac{1}{3}\\log z - 2\\log x",
+      "\\log(y^5z/x^2)",
+      "5\\log y - \\frac{1}{3}\\log z - 2\\log x",
+      "\\log y + 5\\log z - 2\\log x"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 156,
+    "topic": "logarithmic functions",
+    "latex": "\\log\\left(\\frac{\\sqrt[3]{x}}{zy^2}\\right)",
+    "options": [
+      "\\frac{1}{3}\\log x - \\log z - 2\\log y",
+      "\\log x - \\log z - \\log y",
+      "\\frac{1}{3}\\log x + \\log z + 2\\log y",
+      "\\log\\left(\\frac{x}{zy^2}\\right)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 157,
+    "topic": "logarithmic functions",
+    "latex": "\\log_{7}(8x)+2\\log_{7}(8)=2",
+    "options": [
+      "\\frac{49}{512}",
+      "\\frac{1}{8}",
+      "\\frac{7}{64}",
+      "\\frac{49}{64}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 158,
+    "topic": "logarithmic functions",
+    "latex": "\\log_{2}(8x)-3\\log_{2}(6)=0",
+    "options": [
+      "54",
+      "27",
+      "36",
+      "18"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 159,
+    "topic": "logarithmic functions",
+    "latex": "\\log_{7}(5x)-3\\log_{7}(2)=0",
+    "options": [
+      "\\frac{5}{8}",
+      "\\frac{4}{5}",
+      "\\frac{8}{5}",
+      "\\frac{2}{5}"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 160,
+    "topic": "logarithmic functions",
+    "latex": "4\\ln(7x-8)-13=-25",
+    "options": [
+      "\\frac{8+e^{-3}}{7}",
+      "\\frac{8+e^{-4}}{7}",
+      "\\frac{8+e^{-2}}{7}",
+      "\\frac{8-e^{-3}}{7}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 161,
+    "topic": "logarithmic functions",
+    "latex": "5\\ln(4x+9)-1=14",
+    "options": [
+      "\\frac{e^{3}-9}{4}",
+      "\\frac{e^{2}-9}{4}",
+      "\\frac{e^{4}-9}{4}",
+      "\\frac{e^{5}-9}{4}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 162,
+    "topic": "logarithmic functions",
+    "latex": "2\\ln(8x-8)-6=-10",
+    "options": [
+      "\\frac{8+e^{-4}}{8}",
+      "\\frac{8+e^{-2}}{8}",
+      "\\frac{8-e^{-2}}{8}",
+      "\\frac{8+e^{-1}}{8}"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 163,
+    "topic": "logarithmic functions",
+    "latex": "6\\ln(7x+1)+8=-10",
+    "options": [
+      "\\frac{e^{-3}-1}{7}",
+      "\\frac{e^{-2}-1}{7}",
+      "\\frac{e^{-1}-1}{7}",
+      "\\frac{1-e^{-3}}{7}"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 164,
+    "topic": "trigonometry",
+    "latex": "\\tan\\theta>0\\text{ and }\\sin\\theta<0",
+    "options": [
+      "Quadrant I",
+      "Quadrant II",
+      "Quadrant III",
+      "Quadrant IV"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 165,
+    "topic": "trigonometry",
+    "latex": "\\tan\\theta>0\\text{ and }\\sin\\theta>0",
+    "options": [
+      "Quadrant III",
+      "Quadrant I",
+      "Quadrant II",
+      "Quadrant IV"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 166,
+    "topic": "trigonometry",
+    "latex": "\\tan\\theta>0\\text{ and }\\cos\\theta<0",
+    "options": [
+      "Quadrant IV",
+      "Quadrant II",
+      "Quadrant I",
+      "Quadrant III"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": 167,
+    "topic": "trigonometry",
+    "latex": "\\tan\\left(\\frac{\\pi}{4}\\right)",
+    "options": [
+      "\\sqrt{3}",
+      "0",
+      "1",
+      "-1"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 168,
+    "topic": "trigonometry",
+    "latex": "\\tan\\left(\\frac{7\\pi}{6}\\right)",
+    "options": [
+      "-\\frac{\\sqrt{3}}{3}",
+      "\\sqrt{3}",
+      "\\frac{\\sqrt{3}}{3}",
+      "-\\sqrt{3}"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 169,
+    "topic": "trigonometry",
+    "latex": "\\cot\\left(\\frac{11\\pi}{6}\\right)",
+    "options": [
+      "-\\sqrt{3}",
+      "\\frac{\\sqrt{3}}{3}",
+      "\\sqrt{3}",
+      "-\\frac{\\sqrt{3}}{3}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 170,
+    "topic": "trigonometry",
+    "latex": "\\sec\\left(\\frac{11\\pi}{6}\\right)",
+    "options": [
+      "\\frac{2\\sqrt{3}}{3}",
+      "2",
+      "\\sqrt{3}",
+      "\\frac{\\sqrt{3}}{2}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 171,
+    "topic": "trigonometry",
+    "latex": "\\sqrt{2}\\csc(x)=-2",
+    "options": [
+      "\\left\\{\\frac{5\\pi}{4},\\frac{7\\pi}{4}\\right\\}",
+      "\\left\\{\\frac{\\pi}{4},\\frac{3\\pi}{4}\\right\\}",
+      "\\left\\{\\frac{3\\pi}{4},\\frac{5\\pi}{4}\\right\\}",
+      "\\left\\{\\frac{5\\pi}{4},\\frac{3\\pi}{4}\\right\\}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 172,
+    "topic": "trigonometry",
+    "latex": "\\sin(x)=0",
+    "options": [
+      "\\{0,\\pi\\}",
+      "\\left\\{\\frac{\\pi}{2},\\frac{3\\pi}{2}\\right\\}",
+      "\\left\\{\\frac{\\pi}{4},\\frac{5\\pi}{4}\\right\\}",
+      "\\left\\{\\frac{\\pi}{3},\\frac{4\\pi}{3}\\right\\}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 173,
+    "topic": "trigonometry",
+    "latex": "\\sqrt{3}\\csc(x)=-2",
+    "options": [
+      
+      "\\left\\{\\frac{\\pi}{3},\\frac{2\\pi}{3}\\right\\}",
+      "\\left\\{\\frac{2\\pi}{3},\\frac{4\\pi}{3}\\right\\}",
+      "\\left\\{\\frac{\\pi}{6},\\frac{11\\pi}{6}\\right\\}",
+      "\\left\\{\\frac{4\\pi}{3},\\frac{5\\pi}{3}\\right\\}"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": 174,
+    "topic": "trigonometry",
+    "latex": "2\\cos(x)-\\sqrt{2}=0",
+    "options": [
+      "\\left\\{\\frac{\\pi}{3},\\frac{5\\pi}{3}\\right\\}",
+      "\\left\\{\\frac{\\pi}{4},\\frac{7\\pi}{4}\\right\\}",
+      "\\left\\{\\frac{\\pi}{6},\\frac{11\\pi}{6}\\right\\}",
+      "\\left\\{\\frac{3\\pi}{4},\\frac{5\\pi}{4}\\right\\}"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 175,
+    "topic": "trigonometry",
+    "latex": "2\\cos^2(x)-1=0",
+    "options": [
+      "\\left\\{\\frac{\\pi}{6},\\frac{5\\pi}{6},\\frac{7\\pi}{6},\\frac{11\\pi}{6}\\right\\}",
+      "\\left\\{0,\\pi\\right\\}",
+      "\\left\\{\\frac{\\pi}{4},\\frac{3\\pi}{4},\\frac{5\\pi}{4},\\frac{7\\pi}{4}\\right\\}",
+      "\\left\\{\\frac{\\pi}{2},\\frac{3\\pi}{2}\\right\\}"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 176,
+    "topic": "trigonometry",
+    "latex": "\\tan(x)-1=0",
+    "options": [
+      "\\left\\{\\frac{\\pi}{4},\\frac{5\\pi}{4}\\right\\}",
+      "\\left\\{\\frac{3\\pi}{4},\\frac{7\\pi}{4}\\right\\}",
+      "\\left\\{0,\\pi\\right\\}",
+      "\\left\\{\\frac{\\pi}{6},\\frac{7\\pi}{6}\\right\\}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 177,
+    "topic": "trigonometry",
+    "latex": "4\\cos^2(x)-1=0",
+    "options": [
+      "\\left\\{\\frac{\\pi}{4},\\frac{3\\pi}{4},\\frac{5\\pi}{4},\\frac{7\\pi}{4}\\right\\}",
+      "\\left\\{\\frac{\\pi}{3},\\frac{2\\pi}{3},\\frac{4\\pi}{3},\\frac{5\\pi}{3}\\right\\}",
+      "\\left\\{0,\\pi\\right\\}",
+      "\\left\\{\\frac{\\pi}{6},\\frac{5\\pi}{6},\\frac{7\\pi}{6},\\frac{11\\pi}{6}\\right\\}"
+    ],
+    "answerIndex": 1
+  }
+]
