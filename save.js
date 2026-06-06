@@ -12,7 +12,8 @@ async function saveProgress() {
     playerY:       player.y,
     unlocked:      Array.from(unlockedCells), 
     usedQuestions: Array.from(usedQuestionIds),
-    savedAt:       firebase.firestore.FieldValue.serverTimestamp()
+    savedAt:       firebase.firestore.FieldValue.serverTimestamp(),
+    mapGrid: mapData.map(row => [...row])
   };
 
   try {
@@ -42,13 +43,22 @@ async function loadProgress() {
     document.getElementById('hud-hp').textContent    = `HP: ${hp}`;
     document.getElementById('hud-score').textContent = `SCORE: ${score}`;
 
-    await loadMap(currentLevel);
-    //restote player position
+    if (data.mapGrid) {
+      mapData = data.mapGrid;
+      await loadMapConfig(currentLevel);
+      initMaze();
+    } else {
+      await loadMap(currentLevel); // fallback
+      player.x = data.playerX;
+      player.y = data.playerY;
+      drawMaze();
+      return true;
+    }
     player.x = data.playerX;
     player.y = data.playerY;
     drawMaze();
-
     return true;
+    
   } catch (e) {
     console.error(e);
     return false;

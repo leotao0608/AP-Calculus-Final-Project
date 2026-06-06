@@ -9,22 +9,128 @@ let unlockedCells = new Set();
 let mapDifficulty = 1;
 let questions = [];
 
+const levelSizes = {
+  1:  11,
+  2:  13,
+  3:  15,
+  4:  17,
+  5:  19,
+  6:  21,
+  7:  23,
+  8:  25,
+  9:  27,
+  10: 29,
+};
+
 // ── load map from json ──────────────────────────────
 async function loadMap(levelNum) {
   const res  = await fetch(`maps/level${levelNum}.json`);
   const data = await res.json();
 
-  mapData       = data.grid;
   TILE          = data.tileSize;
-  COLS          = data.cols;
-  ROWS          = data.rows;
-  player        = { ...data.start };
+  const size = levelSizes[levelNum] || 11;
+  COLS = size;
+  ROWS = size;
   mapDifficulty = data.difficulty;
-  const qRes  = await fetch(`questions/difficulty${mapDifficulty}.json`);
-  questions   = await qRes.json();
+
+  mapData = generateMaze(COLS, ROWS, data.start);
+  player  = { ...data.start };
+
+  const qRes = await fetch(`questions/difficulty${mapDifficulty}.json`);
+  questions  = await qRes.json();
+
   initMaze();
 }
+//--- Generate Map-------------------------------------
+function generateMaze(cols, rows, start) {
+  const grid = Array.from({ length: rows }, () => Array(cols).fill(1));
 
+  function carve(x, y) {
+    const dirs = [
+      [0, -2], [0, 2], [-2, 0], [2, 0]
+    ].sort(() => Math.random() - 0.5);
+
+    for (const [dx, dy] of dirs) {
+      const nx = x + dx;
+      const ny = y + dy;
+      if (nx > 0 && nx < cols - 1 && ny > 0 && ny < rows - 1 && grid[ny][nx] === 1) {
+        grid[y + dy / 2][x + dx / 2] = 0;
+        grid[ny][nx] = 0;
+        carve(nx, ny);
+      }
+    }
+  }
+
+  grid[start.y][start.x] = 0;
+  carve(start.x, start.y);
+
+  // exit fixed at bottom-right on valid odd coordinate
+  const exitX = cols % 2 === 0 ? cols - 3 : cols - 2;
+  const exitY = rows % 2 === 0 ? rows - 3 : rows - 2;
+  grid[exitY][exitX] = 2;
+
+  // collect all open path cells
+  const pathCells = [];
+  for (let r = 1; r < rows - 1; r++) {
+    for (let c = 1; c < cols - 1; c++) {
+      if (grid[r][c] === 0 &&
+          !(c === start.x && r === start.y) &&
+          !(c === exitX && r === exitY)) {
+        pathCells.push({ x: c, y: r });
+      }
+    }
+  }
+
+  // shuffle path cells
+  pathCells.sort(() => Math.random() - 0.5);
+
+  // place question cells with minimum distance between them
+  const minDist = 3;
+  const placed_cells = [];
+  const questionCount = Math.max(
+    Math.floor(pathCells.length * 0.2), // 2% of path cells
+    1
+  );
+
+  for (const cell of pathCells) {
+    if (placed_cells.length >= questionCount) break;
+    const tooClose = placed_cells.some(
+      p => Math.abs(p.x - cell.x) + Math.abs(p.y - cell.y) < minDist
+    );
+    if (!tooClose) {
+      grid[cell.y][cell.x] = 3;
+      placed_cells.push(cell);
+    }
+  }
+
+  // guarantee at least one question cell on every possible path to exit
+  // by placing one question on the cell adjacent to exit
+  const exitNeighbors = [
+    { x: exitX - 2, y: exitY },
+    { x: exitX, y: exitY - 2 },
+  ];
+  for (const n of exitNeighbors) {
+    if (n.x > 0 && n.y > 0 && grid[n.y][n.x] === 0) {
+      grid[n.y][n.x] = 3;
+      break;
+    }
+  }
+  return grid;
+}
+//---Load Saved Map------------------------------------
+async function loadMapConfig(levelNum) {
+  const res  = await fetch(`maps/level${levelNum}.json`);
+  const data = await res.json();
+  TILE          = data.tileSize;
+  const size = levelSizes[currentLevel] || 11;
+  COLS = size;
+  ROWS = size;
+  mapDifficulty = data.difficulty;
+
+  const qRes = await fetch(`questions/difficulty${mapDifficulty}.json`);
+  questions  = await qRes.json();
+
+}
 // ── initialise canvas ─────────────────────────────────
 function initMaze() {
   const canvas  = document.getElementById('maze-canvas');
