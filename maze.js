@@ -73,9 +73,12 @@ function generateMaze(cols, rows, start) {
   const pathCells = [];
   for (let r = 1; r < rows - 1; r++) {
     for (let c = 1; c < cols - 1; c++) {
-      if (grid[r][c] === 0 &&
-          !(c === start.x && r === start.y) &&
-          !(c === exitX && r === exitY)) {
+      if (
+        r % 2 === 1 && c % 2 === 1 && // only odd coordinates (maze nodes)
+        grid[r][c] === 0 &&
+        !(c === start.x && r === start.y) &&
+        !(c === exitX && r === exitY)
+      ) {
         pathCells.push({ x: c, y: r });
       }
     }
@@ -88,7 +91,7 @@ function generateMaze(cols, rows, start) {
   const minDist = 3;
   const placed_cells = [];
   const questionCount = Math.max(
-    Math.floor(pathCells.length * 0.2), // 2% of path cells
+    Math.floor(pathCells.length * 0.3), // 2% of path cells
     1
   );
 

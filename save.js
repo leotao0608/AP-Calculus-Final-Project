@@ -13,7 +13,7 @@ async function saveProgress() {
     unlocked:      Array.from(unlockedCells), 
     usedQuestions: Array.from(usedQuestionIds),
     savedAt:       firebase.firestore.FieldValue.serverTimestamp(),
-    mapGrid: mapData.map(row => [...row])
+    mapGrid: mapData.map(row => row.join(',')),
   };
 
   try {
@@ -44,7 +44,7 @@ async function loadProgress() {
     document.getElementById('hud-score').textContent = `SCORE: ${score}`;
 
     if (data.mapGrid) {
-      mapData = data.mapGrid;
+      mapData = data.mapGrid.map(row => row.split(',').map(Number));
       await loadMapConfig(currentLevel);
       initMaze();
     } else {
