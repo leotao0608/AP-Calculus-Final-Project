@@ -91,4 +91,27 @@ async function deleteSave() {
   }
 }
 
+async function savePassedLevels() {
+  const user = auth.currentUser;
+  if (!user) return;
+  try {
+    await db.collection('passed').doc(user.uid).set({
+      passed: Array.from(passedLevels)
+    });
+  } catch (e) {
+    console.error(e);
+  }
+}
 
+async function loadPassedLevels() {
+  const user = auth.currentUser;
+  if (!user) return;
+  try {
+    const doc = await db.collection('passed').doc(user.uid).get();
+    if (doc.exists) {
+      passedLevels = new Set(doc.data().passed);
+    }
+  } catch (e) {
+    console.error(e);
+  }
+}

@@ -49,7 +49,7 @@
         <div class="auth-card">
             <h1 class="logo">SELECT LEVEL</h1>
             <div id="level-list"></div>
-            <button class="btn-primary" onclick="showScreen('screen-menu')">← BACK</button>
+            <button class="btn-primary" onclick="showScreen('screen-menu')">BACK</button>
         </div>
     </div>
     <!-- ── game ──────────────────────────────────────── -->
@@ -74,7 +74,7 @@
           <p>You encountered a question!</p>
         </div>
         <div id="game-footer">
-            <button class="btn-primary" style="width:auto" onclick="showScreen('screen-menu')">BACK</button>
+            <button class="btn-primary" style="width:auto" onclick="fromContinue ? showScreen('screen-menu') : showLevelSelect()">BACK</button>            
             <button class="btn-primary" style="width:auto" onclick="saveProgress()">SAVE</button>
             <span id="save-status"></span>
         </div>

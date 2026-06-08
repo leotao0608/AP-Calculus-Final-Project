@@ -7,6 +7,8 @@ let hp              = 3;
 let score           = 0;
 let isMoving        = false;
 let usedQuestionIds = new Set();
+let passedLevels = new Set();
+let fromContinue = false;
 
 const levels = [
   { num: 1, name: 'Level 1', difficulty: 'Difficulty: ★' },
@@ -19,9 +21,17 @@ function showLevelSelect() {
   list.innerHTML = '';
   levels.forEach(lv => {
     const btn = document.createElement('button');
-    btn.className   = 'btn-primary';
-    btn.innerHTML   = `${lv.name} <span style="font-weight:normal;font-size:0.8rem">${lv.difficulty}</span>`;
-    btn.onclick     = () => startGame(lv.num);
+    btn.className = 'btn-primary';
+    const isLocked = lv.num > 1 && !passedLevels.has(lv.num - 1);
+    if (isLocked) {
+      btn.innerHTML = `${lv.name} <span style="font-weight:normal;font-size:0.8rem">🔒</span>`;
+      btn.disabled = true;
+      btn.style.opacity = '0.4';
+    } else {
+      const passed = passedLevels.has(lv.num);
+      btn.innerHTML = `${lv.name} <span style="font-weight:normal;font-size:0.8rem">${lv.difficulty}</span>${passed ? ' <span style="color:green">✔ Passed</span>' : ''}`;
+      btn.onclick = () => startGame(lv.num);
+    }
     list.appendChild(btn);
   });
   showScreen('screen-levelselect');
@@ -99,7 +109,7 @@ function nextQuestion() {
 }
 
 async function startGame(levelNum = 1) {
-  
+  fromContinue = false;
   currentLevel  = levelNum;
   unlockedCells = new Set();
   usedQuestionIds = new Set();
@@ -130,6 +140,7 @@ async function resetGame(level) {
 }
 
 async function continueGame() {
+  fromContinue = true;
   showScreen('screen-game');
   isMoving = false;
   document.getElementById('question-card').classList.remove('open');
@@ -146,11 +157,15 @@ async function levelComplete() {
   const nextLevel = levels.find(lv => lv.num === currentLevel + 1);
 
   if (nextLevel) {
+    passedLevels.add(currentLevel);
+    await savePassedLevels();
     currentLevel++;
     await onLoginSuccess(auth.currentUser);
   } else {
     await deleteSave();
+    passedLevels.add(currentLevel);
     currentLevel = 1;
+    await savePassedLevels();
     await onLoginSuccess(auth.currentUser);
   }
   alert('🎉 You passed!');

@@ -64,6 +64,31 @@ function generateMaze(cols, rows, start) {
   grid[start.y][start.x] = 0;
   carve(start.x, start.y);
 
+  // add extra junctions
+  const junctionCount = Math.floor(Math.min(cols, rows) / 4);
+  for (let i = 0; i < junctionCount; i++) {
+    const r = (Math.floor(Math.random() * ((rows - 3) / 2)) * 2) + 2;
+    const c = (Math.floor(Math.random() * ((cols - 3) / 2)) * 2) + 2;
+    if (r > 0 && r < rows - 1 && c > 0 && c < cols - 1 && grid[r][c] === 1) {
+      const horizontal = grid[r][c - 1] === 0 && grid[r][c + 1] === 0;
+      const vertical   = grid[r - 1][c] === 0 && grid[r + 1][c] === 0;
+      if (!horizontal && !vertical) continue;
+
+      // check no 2x2 blank would be created
+      const wouldCreate2x2 = (
+        (grid[r-1][c-1] === 0 && grid[r-1][c] === 0 && grid[r][c-1] === 0) ||
+        (grid[r-1][c+1] === 0 && grid[r-1][c] === 0 && grid[r][c+1] === 0) ||
+        (grid[r+1][c-1] === 0 && grid[r+1][c] === 0 && grid[r][c-1] === 0) ||
+        (grid[r+1][c+1] === 0 && grid[r+1][c] === 0 && grid[r][c+1] === 0)
+      );
+
+      if (!wouldCreate2x2) {
+        grid[r][c] = 0;
+      }
+    }
+  }
+
+
   // exit fixed at bottom-right on valid odd coordinate
   const exitX = cols % 2 === 0 ? cols - 3 : cols - 2;
   const exitY = rows % 2 === 0 ? rows - 3 : rows - 2;
@@ -91,7 +116,7 @@ function generateMaze(cols, rows, start) {
   const minDist = 3;
   const placed_cells = [];
   const questionCount = Math.max(
-    Math.floor(pathCells.length * 0.3), // 2% of path cells
+    Math.floor(pathCells.length * 0.4), // 2% of path cells
     1
   );
 

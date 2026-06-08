@@ -1,4 +1,3 @@
-
 function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.getElementById(id).classList.add('active');
@@ -47,7 +46,7 @@ async function onLoginSuccess(user) {
   const doc = await db.collection('users').doc(user.uid).get();
   const username = doc.exists ? doc.data().username : user.email;
   document.getElementById('menu-welcome').textContent = `Welcome, ${username}`;
-
+  await loadPassedLevels();
   const hasSave = await checkSaveExists();
   const menuNav = document.getElementById('menu-nav');
     menuNav.innerHTML = hasSave
