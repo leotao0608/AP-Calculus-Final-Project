@@ -290,7 +290,20 @@ document.addEventListener('keydown', (e) => {
     if (isMoving) return;
     isMoving = true;
     movePlayer(nx, ny);
-    setTimeout(() => levelComplete(), 300);
+    setTimeout(() => {
+      const card = document.getElementById('confirm-card');
+      document.getElementById('confirm-message').textContent = 'Do you want to exit?';
+      card.classList.add('open');
+
+      document.getElementById('confirm-yes').onclick = () => {
+        card.classList.remove('open');
+        levelComplete();
+      };
+      document.getElementById('confirm-no').onclick = () => {
+        card.classList.remove('open');
+        isMoving = false;
+      };
+    }, 300);
     return;
   }
   //unlock question

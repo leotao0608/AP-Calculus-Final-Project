@@ -16,6 +16,19 @@ const levels = [
   { num: 3, name: 'Level 3', difficulty: 'Difficulty: ★★★' },
 ];
 
+// ── auto save timer ───────────────────────────────────
+function startAutoSave() {
+  if (window.autoSaveTimer) clearInterval(window.autoSaveTimer);
+  window.autoSaveTimer = setInterval(() => saveProgress(), 30000);
+}
+
+function stopAutoSave() {
+  if (window.autoSaveTimer) {
+    clearInterval(window.autoSaveTimer);
+    window.autoSaveTimer = null;
+  }
+}
+
 function showLevelSelect() {
   const list = document.getElementById('level-list');
   list.innerHTML = '';
@@ -29,21 +42,65 @@ function showLevelSelect() {
       btn.style.opacity = '0.4';
     } else {
       const passed = passedLevels.has(lv.num);
-      btn.innerHTML = `${lv.name} <span style="font-weight:normal;font-size:0.8rem">${lv.difficulty}</span>${passed ? ' <span style="color:green">✔ Passed</span>' : ''}`;
-      btn.onclick = () => startGame(lv.num);
+      btn.innerHTML = `${lv.name} <span style="font-weight:normal;font-size:0.8rem">${lv.difficulty}</span>${passed ? ' <span style="color:green">Passed</span>' : ''}`;
+      btn.onclick = () => {
+        checkSaveExists().then(hasSave => {
+          const card = document.getElementById('confirm-card');
+          document.getElementById('confirm-message').textContent = hasSave
+            ? 'Start a new game? This will overwrite your existing save.'
+            : 'Start Level ' + lv.num + '?';
+          card.classList.add('open');
+
+          document.getElementById('confirm-yes').onclick = () => {
+            card.classList.remove('open');
+            startGame(lv.num);
+          };
+          document.getElementById('confirm-no').onclick = () => {
+            card.classList.remove('open');
+          };
+        });
+      };
     }
     list.appendChild(btn);
   });
   showScreen('screen-levelselect');
 }
 
-
-
 function isQuestionOpen() {
-  return document.getElementById('question-card').classList.contains('open');
+  return document.getElementById('question-card').classList.contains('open')
+      || document.getElementById('confirm-card').classList.contains('open');
+}
+
+// ── cheat code: left→right = auto correct, right→left = auto wrong ──
+let cheatSequence = [];
+
+function cheatClick(side) {
+  if (document.getElementById('btn-next').style.display !== 'none') return;
+  const now = Date.now();
+  if (cheatSequence.length === 0) {
+    cheatSequence = [{ side, time: now }];
+    return;
+  }
+  const first = cheatSequence[0];
+  if (now - first.time > 2000) {
+    cheatSequence = [{ side, time: now }];
+    return;
+  }
+  if (side === first.side) {
+    cheatSequence = [{ side, time: now }];
+    return;
+  }
+  cheatSequence = [];
+  if (first.side === 'left' && side === 'right') {
+    selectAnswer(currentQuestion.answerIndex);
+  } else if (first.side === 'right' && side === 'left') {
+    const wrongIndex = currentQuestion.options.findIndex((_, i) => i !== currentQuestion.answerIndex);
+    selectAnswer(wrongIndex);
+  }
 }
 
 function renderQuestion() {
+  cheatSequence = [];
   document.getElementById('q-meta').textContent =
     `Topic: ${currentQuestion.topic}  |  Difficulty: ${'★'.repeat(currentQuestion.difficulty)}`;
 
@@ -53,7 +110,7 @@ function renderQuestion() {
   const optionsEl = document.getElementById('q-options');
   optionsEl.innerHTML = '';
   const labels = ['A', 'B', 'C', 'D'];
-currentQuestion.options.forEach((opt, i) => {
+  currentQuestion.options.forEach((opt, i) => {
     const btn = document.createElement('button');
     btn.className = 'option-btn';
     btn.innerHTML = `${labels[i]}. \\(${opt}\\)`;
@@ -75,7 +132,6 @@ async function selectAnswer(index) {
     document.getElementById('q-feedback').textContent = '✓ Correct!';
     score += 10;
     document.getElementById('hud-score').textContent = `SCORE: ${score}`;
-    
     document.getElementById('btn-next').textContent = 'CONFIRM →';
   } else {
     buttons[index].classList.add('wrong');
@@ -83,15 +139,16 @@ async function selectAnswer(index) {
     document.getElementById('q-feedback').textContent = '✗ Wrong. You stay.';
     hp--;
     document.getElementById('hud-hp').textContent = `HP: ${hp}`;
-    pendingMove = null; 
+    pendingMove = null;
     document.getElementById('btn-next').textContent = 'CLOSE';
 
     saveMistake(currentQuestion, index);
 
     if (hp <= 0) {
-        await deleteSave();
-        setTimeout(() => { alert('Game Over!'); resetGame(currentLevel); }, 500);
-        return;
+      stopAutoSave();
+      await deleteSave();
+      setTimeout(() => { alert('Game Over!'); resetGame(currentLevel); }, 500);
+      return;
     }
   }
 
@@ -109,34 +166,42 @@ function nextQuestion() {
 }
 
 async function startGame(levelNum = 1) {
-  fromContinue = false;
-  currentLevel  = levelNum;
-  unlockedCells = new Set();
+  stopAutoSave();
+  await deleteSave();
+  fromContinue    = false;
+  currentLevel    = levelNum;
+  unlockedCells   = new Set();
   usedQuestionIds = new Set();
+  hp              = 3;
+  score           = 0;
+  isMoving        = false;
   showScreen('screen-game');
-  hp       = 3;
-  score    = 0;
-  isMoving = false;
   document.getElementById('hud-hp').textContent    = 'HP: 3';
   document.getElementById('hud-score').textContent = 'SCORE: 0';
   document.getElementById('question-card').classList.remove('open');
-  
   document.getElementById('hud-topic').textContent = `LEVEL ${currentLevel}`;
+
   await loadMap(currentLevel);
+  await saveProgress();
+  startAutoSave();
 }
 
 async function resetGame(level) {
-    unlockedCells = new Set();
-    usedQuestionIds = new Set();
-    hp           = 3;
-    score        = 0;
-    currentLevel = level;
-    isMoving     = false;
-    document.getElementById('hud-hp').textContent    = 'HP: 3';
-    document.getElementById('hud-score').textContent = 'SCORE: 0';
-    document.getElementById('question-card').classList.remove('open');
-    document.getElementById('hud-topic').textContent = `LEVEL ${level}`;
-    await loadMap(level);
+  stopAutoSave();
+  unlockedCells   = new Set();
+  usedQuestionIds = new Set();
+  hp              = 3;
+  score           = 0;
+  currentLevel    = level;
+  isMoving        = false;
+  document.getElementById('hud-hp').textContent    = 'HP: 3';
+  document.getElementById('hud-score').textContent = 'SCORE: 0';
+  document.getElementById('question-card').classList.remove('open');
+  document.getElementById('hud-topic').textContent = `LEVEL ${level}`;
+
+  await loadMap(level);
+  await saveProgress();
+  startAutoSave();
 }
 
 async function continueGame() {
@@ -148,27 +213,66 @@ async function continueGame() {
   if (!loaded) {
     currentLevel = 1;
     await startGame();
-  }else {
+  } else {
     document.getElementById('hud-topic').textContent = `LEVEL ${currentLevel}`;
+    startAutoSave();
   }
 }
 
 async function levelComplete() {
+  stopAutoSave();
   const nextLevel = levels.find(lv => lv.num === currentLevel + 1);
 
   if (nextLevel) {
     passedLevels.add(currentLevel);
     await savePassedLevels();
+    await deleteSave();
     currentLevel++;
+    await new Promise(resolve => {
+      const card = document.getElementById('pass-card');
+      card.classList.add('open');
+      setTimeout(() => {
+        card.classList.remove('open');
+        resolve();
+      }, 1500);
+    });
     await onLoginSuccess(auth.currentUser);
   } else {
     await deleteSave();
     passedLevels.add(currentLevel);
     currentLevel = 1;
     await savePassedLevels();
+    await new Promise(resolve => {
+      const card = document.getElementById('pass-card');
+      card.classList.add('open');
+      setTimeout(() => {
+        card.classList.remove('open');
+        resolve();
+      }, 1500);
+    });
     await onLoginSuccess(auth.currentUser);
   }
-  alert('🎉 You passed!');
+}
+
+function exitGame() {
+  const card = document.getElementById('confirm-card');
+  document.getElementById('confirm-message').textContent = 'Are you sure to quit this game?';
+  card.classList.add('open');
+
+  document.getElementById('confirm-yes').onclick = async () => {
+    card.classList.remove('open');
+    stopAutoSave();
+    await saveProgress();
+    if (fromContinue) {
+      showScreen('screen-menu');
+    } else {
+      showLevelSelect();
+    }
+  };
+
+  document.getElementById('confirm-no').onclick = () => {
+    card.classList.remove('open');
+  };
 }
 
 function triggerQuestion(nx, ny) {
@@ -176,16 +280,21 @@ function triggerQuestion(nx, ny) {
   isMoving    = true;
   pendingMove = { nx, ny };
   const pool = questions.filter(q => !usedQuestionIds.has(q.id));
-  if (pool.length === 0) return; // run out of questions
+  if (pool.length === 0) {
+    isMoving = false;
+    movePlayer(nx, ny);
+    pendingMove = null;
+    return;
+  }
   const idx = Math.floor(Math.random() * pool.length);
   currentQuestion = pool[idx];
   usedQuestionIds.add(currentQuestion.id);
 
-  const alert = document.getElementById('alert-card');
-  alert.classList.add('open');
+  const alertCard = document.getElementById('alert-card');
+  alertCard.classList.add('open');
 
   setTimeout(() => {
-    alert.classList.remove('open');
+    alertCard.classList.remove('open');
     renderQuestion();
     document.getElementById('question-card').classList.add('open');
   }, 1000);

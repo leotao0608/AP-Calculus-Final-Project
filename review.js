@@ -1,5 +1,5 @@
 // review.js
-
+let topicChart = null;
 // ── save to Firestore ──────────────────────────
 async function saveMistake(question, wrongIndex) {
   const user = auth.currentUser;
@@ -58,6 +58,7 @@ function renderSummary(mistakes) {
 
   if (mistakes.length === 0) {
     summaryEl.innerHTML = '<p style="color:#888">No mistakes yet. Keep playing!</p>';
+    if (topicChart) { topicChart.destroy(); topicChart = null; }
     return;
   }
 
@@ -75,6 +76,55 @@ function renderSummary(mistakes) {
       <span class="summary-count">${count} mistake${count > 1 ? 's' : ''}</span>
     </div>
   `).join('');
+  // pie chart
+  const ctx = document.getElementById('topic-chart').getContext('2d');
+  if (topicChart) topicChart.destroy();
+  topicChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: sorted.map(([topic]) => topic),
+      datasets: [{
+        data: sorted.map(([, count]) => count),
+        backgroundColor: sorted.map((_, i) => 
+          `hsl(${Math.round(i * 360 / sorted.length)}, 60%, 55%)`
+        ),
+        borderColor: '#000',
+        borderWidth: 0,
+        borderColor: '#000',
+        borderWidth: 1,
+      }]
+    },
+    options: {
+      plugins: {
+        title: {
+          display: true,
+          text: 'WEAKPOINTS ANALYSIS',
+          color: '#fff',
+          font: { family: 'monospace', size: 15 },
+          padding: { bottom: 10 }
+        },
+        legend: {
+          display: true,
+          position: 'bottom',
+          labels: {
+            color: '#fff',
+            font: { family: 'monospace', size: 11 },
+            boxWidth: 12,
+            padding: 8,
+          }
+        },
+        tooltip: {
+          callbacks: {
+            label: (item) => {
+              const total = item.dataset.data.reduce((a, b) => a + b, 0);
+              const pct = ((item.parsed / total) * 100).toFixed(1);
+              return `${item.label}: ${pct}%`;
+            }
+          }
+        }
+      }
+    }
+  });
 }
 
 // ── render wrong question list ──────────────────────────────────
@@ -108,9 +158,11 @@ function renderMistakeList(mistakes) {
 
 async function removeMistake(questionId, btn) {
   const card = document.getElementById('confirm-card');
+  document.getElementById('confirm-message').textContent = 'Do you want to remove this mistake?';
   card.classList.add('open');
 
   document.getElementById('confirm-yes').onclick = async () => {
+    
     card.classList.remove('open');
     const user = auth.currentUser;
     if (!user) return;

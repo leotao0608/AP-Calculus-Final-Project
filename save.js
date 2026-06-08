@@ -18,9 +18,9 @@ async function saveProgress() {
 
   try {
     await db.collection('progress').doc(user.uid).set(data);
-    showSaveStatus('Saved!');
+    showSaveStatus('Auto-saved');
   } catch (e) {
-    showSaveStatus('Save failed.');
+    showSaveStatus('Auto-save failed');
     console.error(e);
   }
 }
@@ -68,7 +68,7 @@ async function loadProgress() {
 function showSaveStatus(msg) {
   const el = document.getElementById('save-status');
   el.textContent = msg;
-  setTimeout(() => el.textContent = '', 2000);
+  setTimeout(() => el.textContent = '', 1500);
 }
 async function checkSaveExists() {
   const user = auth.currentUser;
