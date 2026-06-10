@@ -40,7 +40,7 @@ async function loadProgress() {
     unlockedCells = new Set(data.unlocked);
     usedQuestionIds = new Set(data.usedQuestions || []);
 
-    document.getElementById('hud-hp').textContent    = `HP: ${hp}`;
+    document.getElementById('hud-hp').textContent    = `Chances: ${hp}`;
     document.getElementById('hud-score').textContent = `SCORE: ${score}`;
 
     if (data.mapGrid) {

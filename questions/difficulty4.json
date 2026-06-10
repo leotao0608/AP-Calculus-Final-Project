@@ -1,0 +1,1022 @@
+[
+  {
+    "id": 400,
+    "topic": "product rule",
+    "latex": "\\text{Given the function }f(x)=(3x^2+5)(3+9x^{-2}-10x),\\text{ find }f'(x)\\text{ in any form.}",
+    "options": [
+      "-90x^2+18x-50-90x^{-3}",
+      "-90x^2+18x-50+90x^{-3}",
+      "-60x^2+18x-50-90x^{-3}",
+      "-90x^2+18x-90x^{-3}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 401,
+    "topic": "product rule",
+    "latex": "\\text{Given the function }f(x)=(6x^2-3)(5-2x^2+7x^{-1}),\\text{ find }f'(x)\\text{ in any form.}",
+    "options": [
+      "-48x^3+72x+21x^{-2}",
+      "-48x^3+72x+42+21x^{-2}",
+      "-48x^3+42+21x^{-2}",
+      "-48x^3+72x+42-21x^{-2}"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 402,
+    "topic": "product rule",
+    "latex": "\\text{Given the function }f(x)=(6+10x^3)(8x^3-10+8x),\\text{ find }f'(x)\\text{ in any form.}",
+    "options": [
+      "480x^5+320x^3-156x^2+48",
+      "480x^5+320x^3-160x^2+48",
+      "400x^5+320x^3-156x^2+48",
+      "480x^5+320x^3-156x^2"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 403,
+    "topic": "product rule",
+    "latex": "\\text{Given the function }y=(-8x-10)(-6x^3-8-7x^{-1}),\\text{ find }\\frac{dy}{dx}\\text{ in any form.}",
+    "options": [
+      "192x^3+180x^2+64+70x^{-2}",
+      "192x^3+180x^2+64-70x^{-2}",
+      "192x^3+180x^2-70x^{-2}",
+      "180x^3+180x^2+64-70x^{-2}"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 404,
+    "topic": "product rule",
+    "latex": "\\text{Given the function }f(x)=(-4-6x^3)(-9x^3-4x^2+5),\\text{ find }f'(x)\\text{ in any form.}",
+    "options": [
+      "324x^5+120x^4+18x^2+32x",
+      "324x^5+120x^4+18x^2",
+      "324x^5+120x^4+32x",
+      "300x^5+120x^4+18x^2+32x"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 405,
+    "topic": "product rule",
+    "latex": "\\text{Given the function }f(x)=(-9-5x^3)(7x+2x^{-3}+2),\\text{ find }f'(x)\\text{ in any form.}",
+    "options": [
+      "-140x^3-30x^2-63+54x^{-4}",
+      "-140x^3-30x^2+54x^{-4}",
+      "-140x^3-30x^2-63-54x^{-4}",
+      "-150x^3-30x^2-63+54x^{-4}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 406,
+    "topic": "product rule",
+    "latex": "\\text{Given the function }y=(-4+5x^{-3}+7x^{-2})(-2-5x^{-1}),\\text{ find }\\frac{dy}{dx}\\text{ in any form.}",
+    "options": [
+      "-20x^{-2}+28x^{-3}+135x^{-4}+100x^{-5}",
+      "-20x^{-2}+28x^{-3}+135x^{-4}-100x^{-5}",
+      "-20x^{-2}+28x^{-3}+100x^{-5}",
+      "-20x^{-2}+135x^{-4}+100x^{-5}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 407,
+    "topic": "product rule",
+    "latex": "\\text{Given the function }f(x)=(-5-4x-9x^2)(6x^3+10),\\text{ find }f'(x)\\text{ in any form.}",
+    "options": [
+      "-270x^4-96x^3-90x^2-180x-40",
+      "-270x^4-96x^3-90x^2-180x",
+      "-270x^4-90x^2-180x-40",
+      "-240x^4-96x^3-90x^2-180x-40"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 408,
+    "topic": "product rule",
+    "latex": "\\text{Given the function }f(x)=(7-8x-10x^3)(-6x^2-5),\\text{ find }f'(x)\\text{ in any form.}",
+    "options": [
+      "300x^4+294x^2-84x+40",
+      "300x^4+294x^2+84x+40",
+      "300x^4+294x^2-84x",
+      "240x^4+294x^2-84x+40"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 409,
+    "topic": "product rule",
+    "latex": "\\text{Given the function }f(x)=(-7x^3-2)(5x^2-6+2x^{-3}),\\text{ find }f'(x)\\text{ in any form.}",
+    "options": [
+      "-175x^4+126x^2-20x+12x^{-4}",
+      "-175x^4+126x^2-20x-12x^{-4}",
+      "-175x^4+126x^2+20x+12x^{-4}",
+      "-150x^4+126x^2-20x+12x^{-4}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 410,
+    "topic": "product rule",
+    "latex": "\\text{Given the function }y=(-10+7x^{-2}+x)(4x^{-2}+3),\\text{ find }\\frac{dy}{dx}\\text{ in any form.}",
+    "options": [
+      "3-4x^{-2}+38x^{-3}-112x^{-5}",
+      "3+4x^{-2}+38x^{-3}-112x^{-5}",
+      "3-4x^{-2}+38x^{-3}+112x^{-5}",
+      "-4x^{-2}+38x^{-3}-112x^{-5}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 411,
+    "topic": "product rule",
+    "latex": "\\text{Given the function }y=(3x^{-3}+9)(-6-2x-7x^3),\\text{ find }\\frac{dy}{dx}\\text{ in any form.}",
+    "options": [
+      "-189x^2-18+12x^{-3}+54x^{-4}",
+      "-189x^2-18-12x^{-3}+54x^{-4}",
+      "-189x^2+12x^{-3}+54x^{-4}",
+      "-180x^2-18+12x^{-3}+54x^{-4}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 412,
+    "topic": "product rule",
+    "latex": "\\text{Given the function }f(x)=(2x+4+5x^3)\\cos x,\\text{ find }f'(x)\\text{ in any form.}",
+    "options": [
+      "-5x^3\\sin x+15x^2\\cos x-2x\\sin x-4\\sin x+2\\cos x",
+      "5x^3\\sin x+15x^2\\cos x-2x\\sin x-4\\sin x+2\\cos x",
+      "-5x^3\\sin x+15x^2\\cos x+2x\\sin x-4\\sin x+2\\cos x",
+      "-5x^3\\sin x+15x^2\\cos x-2x\\sin x+2\\cos x"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 413,
+    "topic": "product rule",
+    "latex": "\\text{Given the function }f(x)=(4x^3+4x^2)\\sin x,\\text{ find }f'(x)\\text{ in any form.}",
+    "options": [
+      "4x^3\\cos x+12x^2\\sin x+4x^2\\cos x+8x\\sin x",
+      "4x^3\\cos x+12x^2\\sin x+8x\\sin x",
+      "4x^3\\sin x+12x^2\\sin x+4x^2\\cos x+8x\\sin x",
+      "4x^3\\cos x+12x^2\\sin x+4x^2\\cos x-8x\\sin x"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 414,
+    "topic": "product rule",
+    "latex": "\\text{Given the function }f(x)=x^{-3}\\cos x,\\text{ find }f'(x)\\text{ in any form.}",
+    "options": [
+      "-x^{-3}\\sin x-3x^{-4}\\cos x",
+      "x^{-3}\\sin x-3x^{-4}\\cos x",
+      "-x^{-3}\\sin x+3x^{-4}\\cos x",
+      "-3x^{-3}\\sin x-x^{-4}\\cos x"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 415,
+    "topic": "product rule",
+    "latex": "\\text{Given the function }y=3x^3-x^2\\sin x,\\text{ find }\\frac{dy}{dx}\\text{ in any form.}",
+    "options": [
+      "-x^2\\cos x+9x^2-2x\\sin x",
+      "-x^2\\cos x+9x^2+2x\\sin x",
+      "-x^2\\cos x+6x^2-2x\\sin x",
+      "x^2\\cos x+9x^2-2x\\sin x"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 416,
+    "topic": "product rule",
+    "latex": "\\text{Given the function }f(x)=(2x^2-3x)\\cos x,\\text{ find }f'(x)\\text{ in any form.}",
+    "options": [
+      "-2x^2\\sin x+3x\\sin x+4x\\cos x-3\\cos x",
+      "-2x^2\\sin x-3x\\sin x+4x\\cos x-3\\cos x",
+      "-2x^2\\sin x+3x\\sin x+4x\\cos x+3\\cos x",
+      "2x^2\\sin x+3x\\sin x+4x\\cos x-3\\cos x"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 417,
+    "topic": "product rule",
+    "latex": "\\text{Given the function }y=2x^{-2}\\sin x,\\text{ find }\\frac{dy}{dx}\\text{ in any form.}",
+    "options": [
+      "2x^{-2}\\cos x-4x^{-3}\\sin x",
+      "2x^{-2}\\cos x+4x^{-3}\\sin x",
+      "-2x^{-2}\\cos x-4x^{-3}\\sin x",
+      "2x^{-3}\\cos x-4x^{-2}\\sin x"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 418,
+    "topic": "quotient rule",
+    "latex": "\\text{Given the function }y=\\frac{6x^3-1}{1-x},\\text{ find }\\frac{dy}{dx}\\text{ in simplified form.}",
+    "options": [
+      "\\frac{-12x^3+18x^2-1}{(1-x)^2}",
+      "\\frac{-18x^2+1}{(1-x)^2}",
+      "\\frac{-12x^3+18x^2+1}{(1-x)^2}",
+      "\\frac{-12x^3+12x^2-1}{(1-x)^2}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 419,
+    "topic": "quotient rule",
+    "latex": "\\text{Given the function }f(x)=\\frac{2x-3}{x^3-2},\\text{ find }f'(x)\\text{ in simplified form.}",
+    "options": [
+      "\\frac{-4x^3+9x^2-4}{(x^3-2)^2}",
+      "\\frac{-4x^3+9x^2+4}{(x^3-2)^2}",
+      "\\frac{-6x^3+9x^2-4}{(x^3-2)^2}",
+      "\\frac{-4x^3+6x^2-4}{(x^3-2)^2}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 420,
+    "topic": "quotient rule",
+    "latex": "\\text{Given the function }f(x)=\\frac{6+x^3}{x^3-1},\\text{ find }f'(x)\\text{ in simplified form.}",
+    "options": [
+      "\\frac{-21x^2}{(x^3-1)^2}",
+      "\\frac{21x^2}{(x^3-1)^2}",
+      "\\frac{-18x^2}{(x^3-1)^2}",
+      "\\frac{-21x^3}{(x^3-1)^2}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 421,
+    "topic": "quotient rule",
+    "latex": "\\text{Given the function }f(x)=\\frac{5-3x^4}{x},\\text{ find }f'(x)\\text{ in simplified form.}",
+    "options": [
+      "\\frac{-12x^4-5}{x^2}",
+      "\\frac{-12x^4+5}{x^2}",
+      "\\frac{-15x^4-5}{x^2}",
+      "\\frac{-12x^3-5}{x^2}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 422,
+    "topic": "quotient rule",
+    "latex": "\\text{Given the function }f(x)=\\frac{1+x^3}{6-x},\\text{ find }f'(x)\\text{ in simplified form.}",
+    "options": [
+      "\\frac{2x^3-18x^2-1}{(6-x)^2}",
+      "\\frac{-2x^3+18x^2+1}{(6-x)^2}",
+      "\\frac{2x^3-18x^2+1}{(6-x)^2}",
+      "\\frac{3x^2(6-x)}{(6-x)^2}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 423,
+    "topic": "quotient rule",
+    "latex": "\\text{Given the function }f(x)=\\frac{3+5x^2}{2x^2+3},\\text{ find }f'(x)\\text{ in simplified form.}",
+    "options": [
+      "\\frac{18x}{(2x^2+3)^2}",
+      "\\frac{-18x}{(2x^2+3)^2}",
+      "\\frac{12x}{(2x^2+3)^2}",
+      "\\frac{18x^2}{(2x^2+3)^2}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 424,
+    "topic": "quotient rule",
+    "latex": "\\text{Given the function }f(x)=\\frac{5-2x^4}{x},\\text{ find }f'(x)\\text{ in simplified form.}",
+    "options": [
+      "\\frac{-6x^4-5}{x^2}",
+      "\\frac{-8x^4-5}{x^2}",
+      "\\frac{-8x^4+5}{x^2}",
+      "\\frac{-8x^3-5}{x^2}"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 425,
+    "topic": "quotient rule",
+    "latex": "\\text{Given the function }y=\\frac{6-5x^2}{2x^2},\\text{ find }\\frac{dy}{dx}\\text{ in simplified form.}",
+    "options": [
+      "-\\frac{6}{x^3}",
+      "\\frac{6}{x^3}",
+      "-\\frac{12}{x^3}",
+      "-\\frac{3}{x^3}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 426,
+    "topic": "quotient rule",
+    "latex": "\\text{Given the function }f(x)=\\frac{3-4x^3}{x},\\text{ find }f'(x)\\text{ in simplified form.}",
+    "options": [
+      "\\frac{-8x^3-3}{x^2}",
+      "\\frac{-12x^3-3}{x^2}",
+      "\\frac{-12x^3+3}{x^2}",
+      "\\frac{-12x^2-3}{x^2}"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 427,
+    "topic": "quotient rule",
+    "latex": "\\text{Given the function }f(x)=\\frac{2+5x^3}{2-x^3},\\text{ find }f'(x)\\text{ in simplified form.}",
+    "options": [
+      "\\frac{36x^2}{(2-x^3)^2}",
+      "\\frac{30x^2}{(2-x^3)^2}",
+      "\\frac{36x^3}{(2-x^3)^2}",
+      "\\frac{-36x^2}{(2-x^3)^2}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 428,
+    "topic": "quotient rule",
+    "latex": "\\text{Given the function }f(x)=\\frac{1-x^3}{x},\\text{ find }f'(x)\\text{ in simplified form.}",
+    "options": [
+      "\\frac{-2x^3+1}{x^2}",
+      "\\frac{-2x^3-1}{x^2}",
+      "\\frac{-3x^3-1}{x^2}",
+      "\\frac{-3x^3+1}{x^2}"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": 429,
+    "topic": "chain rule",
+    "latex": "\\text{Given the function }f(x)=-5(-7x^2+3x)^6,\\text{ find }f'(x)\\text{ in any form.}",
+    "options": [
+      "-30(-14x+3)(-7x^2+3x)^5",
+      "30(-14x+3)(-7x^2+3x)^5",
+      "-30(-7x+3)(-7x^2+3x)^5",
+      "-25(-14x+3)(-7x^2+3x)^5"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 430,
+    "topic": "chain rule",
+    "latex": "\\text{Given the function }f(x)=-2(-8x-5)^5,\\text{ find }f'(x)\\text{ in any form.}",
+    "options": [
+      "80(-8x-5)^4",
+      "-80(-8x-5)^4",
+      "40(-8x-5)^4",
+      "80(-8x-5)^5"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 431,
+    "topic": "chain rule",
+    "latex": "\\text{Given the function }f(x)=-5(5x^2+6x-8)^5,\\text{ find }f'(x)\\text{ in any form.}",
+    "options": [
+      "-25(10x+6)(5x^2+6x-8)^4",
+      "25(10x+6)(5x^2+6x-8)^4",
+      "-50(10x+6)(5x^2+6x-8)^4",
+      "-25(5x+6)(5x^2+6x-8)^4"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 432,
+    "topic": "chain rule",
+    "latex": "\\text{Given the function }f(x)=(-2x^2+6x)^6,\\text{ find }f'(x)\\text{ in any form.}",
+    "options": [
+      "6(-4x+6)(-2x^2+6x)^5",
+      "12(-4x+6)(-2x^2+6x)^5",
+      "6(-2x+6)(-2x^2+6x)^5",
+      "-6(-4x+6)(-2x^2+6x)^5"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 433,
+    "topic": "chain rule",
+    "latex": "\\text{Given the function }y=-2(8x^2-9x-3)^4,\\text{ find }\\frac{dy}{dx}\\text{ in any form.}",
+    "options": [
+      "-8(16x-9)(8x^2-9x-3)^3",
+      "8(16x-9)(8x^2-9x-3)^3",
+      "-4(16x-9)(8x^2-9x-3)^3",
+      "-8(8x-9)(8x^2-9x-3)^3"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 434,
+    "topic": "chain rule",
+    "latex": "\\text{Given the function }y=(-x^2-5x)^3,\\text{ find }\\frac{dy}{dx}\\text{ in any form.}",
+    "options": [
+      "3(-2x-5)(-x^2-5x)^2",
+      "-3(-2x-5)(-x^2-5x)^2",
+      "6(-2x-5)(-x^2-5x)^2",
+      "3(-x-5)(-x^2-5x)^2"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 435,
+    "topic": "chain rule",
+    "latex": "\\text{Given the function }f(x)=2(-9x^2+x+6)^4,\\text{ find }f'(x)\\text{ in any form.}",
+    "options": [
+      "8(-18x+1)(-9x^2+x+6)^3",
+      "-8(-18x+1)(-9x^2+x+6)^3",
+      "4(-18x+1)(-9x^2+x+6)^3",
+      "8(-9x+1)(-9x^2+x+6)^3"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 436,
+    "topic": "chain rule",
+    "latex": "\\text{Given the function }f(x)=(9x^2+3)^{-\\frac{4}{3}},\\text{ find }f'(x)\\text{ in any form.}",
+    "options": [
+      "-24x(9x^2+3)^{-\\frac{7}{3}}",
+      "24x(9x^2+3)^{-\\frac{7}{3}}",
+      "-12x(9x^2+3)^{-\\frac{7}{3}}",
+      "-24x(9x^2+3)^{-\\frac{4}{3}}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 437,
+    "topic": "chain rule",
+    "latex": "\\text{Given the function }y=5(9x^2-7x)^{\\frac{1}{4}},\\text{ find }\\frac{dy}{dx}\\text{ in any form.}",
+    "options": [
+      "\\frac{5(18x-7)}{4(9x^2-7x)^{3/4}}",
+      "\\frac{5(18x-7)}{(9x^2-7x)^{3/4}}",
+      "\\frac{5(9x-7)}{4(9x^2-7x)^{3/4}}",
+      "-\\frac{5(18x-7)}{4(9x^2-7x)^{3/4}}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 438,
+    "topic": "chain rule",
+    "latex": "\\text{Given the function }f(x)=(7x+2)^{-\\frac{1}{4}},\\text{ find }f'(x)\\text{ in any form.}",
+    "options": [
+      "-\\frac{7}{4}(7x+2)^{-5/4}",
+      "\\frac{7}{4}(7x+2)^{-5/4}",
+      "-\\frac{1}{4}(7x+2)^{-5/4}",
+      "-\\frac{7}{4}(7x+2)^{-1/4}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 439,
+    "topic": "chain rule",
+    "latex": "\\text{Given the function }f(x)=(-8x^2-5x)^{\\frac{3}{4}},\\text{ find }f'(x)\\text{ in any form.}",
+    "options": [
+      "\\frac{3(-16x-5)}{4(-8x^2-5x)^{1/4}}",
+      "-\\frac{3(-16x-5)}{4(-8x^2-5x)^{1/4}}",
+      "\\frac{3(-8x-5)}{4(-8x^2-5x)^{1/4}}",
+      "\\frac{3(-16x-5)}{(-8x^2-5x)^{1/4}}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 440,
+    "topic": "chain rule",
+    "latex": "\\text{Given the function }y=3(8x^2-6x+4)^{\\frac{1}{3}},\\text{ find }\\frac{dy}{dx}\\text{ in any form.}",
+    "options": [
+      "\\frac{16x-6}{(8x^2-6x+4)^{2/3}}",
+      "\\frac{16x-6}{3(8x^2-6x+4)^{2/3}}",
+      "-\\frac{16x-6}{(8x^2-6x+4)^{2/3}}",
+      "\\frac{8x-6}{(8x^2-6x+4)^{2/3}}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 441,
+    "topic": "chain rule",
+    "latex": "\\text{Given the function }y=\\frac{1}{\\sqrt[5]{-5x^2+7}},\\text{ find }\\frac{dy}{dx}\\text{ in any form.}",
+    "options": [
+      "2x(-5x^2+7)^{-6/5}",
+      "-2x(-5x^2+7)^{-6/5}",
+      "x(-5x^2+7)^{-6/5}",
+      "2x(-5x^2+7)^{-1/5}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 442,
+    "topic": "chain rule",
+    "latex": "\\text{Given the function }f(x)=\\sqrt{8x+6},\\text{ find }f'(x)\\text{ in any form.}",
+    "options": [
+      "\\frac{4}{\\sqrt{8x+6}}",
+      "\\frac{8}{\\sqrt{8x+6}}",
+      "\\frac{1}{\\sqrt{8x+6}}",
+      "\\frac{4}{8x+6}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 443,
+    "topic": "chain rule",
+    "latex": "\\text{Given the function }f(x)=\\frac{1}{\\sqrt[5]{-2x^2+8}},\\text{ find }f'(x)\\text{ in any form.}",
+    "options": [
+      "\\frac{4x}{5}(-2x^2+8)^{-6/5}",
+      "-\\frac{4x}{5}(-2x^2+8)^{-6/5}",
+      "\\frac{2x}{5}(-2x^2+8)^{-6/5}",
+      "\\frac{4x}{5}(-2x^2+8)^{-1/5}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 444,
+    "topic": "chain rule",
+    "latex": "\\text{Given the function }y=\\frac{1}{\\sqrt[3]{6x^2+6x-7}},\\text{ find }\\frac{dy}{dx}\\text{ in any form.}",
+    "options": [
+      "-\\frac{4x+2}{(6x^2+6x-7)^{4/3}}",
+      "\\frac{4x+2}{(6x^2+6x-7)^{4/3}}",
+      "-\\frac{2x+2}{(6x^2+6x-7)^{4/3}}",
+      "-\\frac{4x+2}{(6x^2+6x-7)^{1/3}}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 445,
+    "topic": "chain rule (trig)",
+    "latex": "\\text{Given the function }f(x)=4\\cos(2x^2),\\text{ find }f'(x).",
+    "options": [
+      "-16x\\sin(2x^2)",
+      "16x\\sin(2x^2)",
+      "-8x\\sin(2x^2)",
+      "-16x\\cos(2x^2)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 446,
+    "topic": "chain rule (trig)",
+    "latex": "\\text{Given the function }y=2\\cos^3(x),\\text{ find }\\frac{dy}{dx}.",
+    "options": [
+      "-6\\cos^2(x)\\sin(x)",
+      "6\\cos^2(x)\\sin(x)",
+      "-3\\cos^2(x)\\sin(x)",
+      "-6\\cos(x)\\sin(x)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 447,
+    "topic": "chain rule (trig)",
+    "latex": "\\text{Given the function }y=2\\cos(5-x^2),\\text{ find }\\frac{dy}{dx}.",
+    "options": [
+      "-4x\\sin(5-x^2)",
+      "4x\\sin(5-x^2)",
+      "-2x\\sin(5-x^2)",
+      "4x\\cos(5-x^2)"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 448,
+    "topic": "chain rule (trig)",
+    "latex": "\\text{Given the function }f(x)=3\\cos(x^3),\\text{ find }f'(x).",
+    "options": [
+      "-9x^2\\sin(x^3)",
+      "9x^2\\sin(x^3)",
+      "-3x^2\\sin(x^3)",
+      "-9x^2\\cos(x^3)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 449,
+    "topic": "chain rule (trig)",
+    "latex": "\\text{Given the function }y=-\\sin(2^x),\\text{ find }\\frac{dy}{dx}.",
+    "options": [
+      "-2^x\\ln(2)\\cos(2^x)",
+      "2^x\\ln(2)\\cos(2^x)",
+      "-2^x\\ln(2)\\sin(2^x)",
+      "-\\ln(2)\\cos(2^x)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 450,
+    "topic": "chain rule (trig)",
+    "latex": "\\text{Given the function }f(x)=2^{\\cos x},\\text{ find }f'(x).",
+    "options": [
+      "-2^{\\cos x}\\ln(2)\\sin(x)",
+      "2^{\\cos x}\\ln(2)\\sin(x)",
+      "-\\ln(2)\\sin(x)",
+      "-2^{\\cos x}\\cos(x)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 451,
+    "topic": "chain rule (trig)",
+    "latex": "\\text{Given the function }f(x)=-4\\cos^4(x),\\text{ find }f'(x).",
+    "options": [
+      "16\\cos^3(x)\\sin(x)",
+      "-16\\cos^3(x)\\sin(x)",
+      "4\\cos^3(x)\\sin(x)",
+      "16\\cos^4(x)\\sin(x)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 452,
+    "topic": "chain rule (trig)",
+    "latex": "\\text{Given the function }f(x)=2\\sin(4x^2),\\text{ find }f'(x).",
+    "options": [
+      "8x\\cos(4x^2)",
+      "16x\\cos(4x^2)",
+      "-16x\\cos(4x^2)",
+      "16x\\sin(4x^2)"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 453,
+    "topic": "chain rule (trig)",
+    "latex": "\\text{Given the function }f(x)=\\sin[(5-5x^2)^3],\\text{ find }f'(x).",
+    "options": [
+      "-30x(5-5x^2)^2\\sin[(5-5x^2)^3]",
+      "-30x(5-5x^2)^2\\cos[(5-5x^2)^3]",
+      "30x(5-5x^2)^2\\cos[(5-5x^2)^3]",
+      "-10x(5-5x^2)^2\\cos[(5-5x^2)^3]"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 454,
+    "topic": "chain rule (trig)",
+    "latex": "\\text{Given the function }y=\\sqrt[3]{\\sin(5-4x)},\\text{ find }\\frac{dy}{dx}.",
+    "options": [
+      "-\\frac{4\\cos(5-4x)}{3\\sin^{2/3}(5-4x)}",
+      "\\frac{4\\cos(5-4x)}{3\\sin^{2/3}(5-4x)}",
+      "-\\frac{4\\sin(5-4x)}{3\\cos^{2/3}(5-4x)}",
+      "-4\\cos(5-4x)\\sin^{-2/3}(5-4x)"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 455,
+    "topic": "chain rule (trig)",
+    "latex": "\\text{Given the function }f(x)=2\\cos^3(3x^2),\\text{ find }f'(x).",
+    "options": [
+      "-36x\\cos^2(3x^2)\\sin(3x^2)",
+      "36x\\cos^2(3x^2)\\sin(3x^2)",
+      "-18x\\cos^2(3x^2)\\sin(3x^2)",
+      "-36x\\cos^3(3x^2)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 456,
+    "topic": "chain rule (trig)",
+    "latex": "\\text{Given the function }y=\\sin^3(1+5x^2),\\text{ find }\\frac{dy}{dx}.",
+    "options": [
+      "30x\\sin^2(1+5x^2)\\cos(1+5x^2)",
+      "15x\\sin^2(1+5x^2)\\cos(1+5x^2)",
+      "-30x\\sin^2(1+5x^2)\\cos(1+5x^2)",
+      "30x\\sin^3(1+5x^2)\\cos(1+5x^2)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 457,
+    "topic": "chain rule (trig)",
+    "latex": "\\text{Given the function }y=\\cos[(6-6x^2)^3],\\text{ find }\\frac{dy}{dx}.",
+    "options": [
+      "36x(6-6x^2)^2\\sin[(6-6x^2)^3]",
+      "-36x(6-6x^2)^2\\sin[(6-6x^2)^3]",
+      "36x(6-6x^2)^2\\cos[(6-6x^2)^3]",
+      "-12x(6-6x^2)^2\\sin[(6-6x^2)^3]"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 458,
+    "topic": "chain rule (trig)",
+    "latex": "\\text{Given the function }f(x)=\\sin[(6x^2+5)^4],\\text{ find }f'(x).",
+    "options": [
+      "48x(6x^2+5)^3\\sin[(6x^2+5)^4]",
+      "48x(6x^2+5)^3\\cos[(6x^2+5)^4]",
+      "24x(6x^2+5)^3\\cos[(6x^2+5)^4]",
+      "-48x(6x^2+5)^3\\cos[(6x^2+5)^4]"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 459,
+    "topic": "chain rule (trig)",
+    "latex": "\\text{Given the function }y=\\sin[(3+6x^2)^4],\\text{ find }\\frac{dy}{dx}.",
+    "options": [
+      "48x(3+6x^2)^3\\cos[(3+6x^2)^4]",
+      "24x(3+6x^2)^3\\cos[(3+6x^2)^4]",
+      "-48x(3+6x^2)^3\\cos[(3+6x^2)^4]",
+      "48x(3+6x^2)^3\\sin[(3+6x^2)^4]"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 460,
+    "topic": "chain rule (trig)",
+    "latex": "\\text{Given the function }f(x)=-3\\cos(\\sqrt{5x^2+2}),\\text{ find }f'(x).",
+    "options": [
+      "\\frac{15x\\sin(\\sqrt{5x^2+2})}{\\sqrt{5x^2+2}}",
+      "-\\frac{15x\\sin(\\sqrt{5x^2+2})}{\\sqrt{5x^2+2}}",
+      "\\frac{15x\\cos(\\sqrt{5x^2+2})}{\\sqrt{5x^2+2}}",
+      "\\frac{30x\\sin(\\sqrt{5x^2+2})}{\\sqrt{5x^2+2}}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 461,
+    "topic": "chain rule (trig)",
+    "latex": "\\text{Given the function }f(x)=\\sqrt[4]{\\sin(5-x^2)},\\text{ find }f'(x).",
+    "options": [
+      "-\\frac{x\\cos(5-x^2)}{2\\sin^{3/4}(5-x^2)}",
+      "\\frac{x\\cos(5-x^2)}{2\\sin^{3/4}(5-x^2)}",
+      "-\\frac{x\\sin(5-x^2)}{2\\cos^{3/4}(5-x^2)}",
+      "-x\\cos(5-x^2)\\sin^{-3/4}(5-x^2)"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 462,
+    "topic": "chain rule (trig)",
+    "latex": "\\text{Given the function }y=-3\\sin^2(x^3),\\text{ find }\\frac{dy}{dx}.",
+    "options": [
+      "-18x^2\\sin(x^3)\\cos(x^3)",
+      "18x^2\\sin(x^3)\\cos(x^3)",
+      "-6x^2\\sin(x^3)\\cos(x^3)",
+      "-18x^3\\sin(x^3)\\cos(x^3)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 463,
+    "topic": "derivatives (trig)",
+    "latex": "\\text{Given }y=\\csc(x),\\text{ find }\\frac{dy}{dx}.",
+    "options": [
+      "-\\csc(x)\\cot(x)",
+      "\\csc(x)\\cot(x)",
+      "-\\sec(x)\\tan(x)",
+      "\\cot(x)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 464,
+    "topic": "derivatives (trig)",
+    "latex": "\\text{Given }y=3\\cot^3(x),\\text{ find }\\frac{dy}{dx}.",
+    "options": [
+      "-3\\cot^2(x)\\csc^2(x)",
+      "-9\\cot^2(x)\\csc^2(x)",
+      "9\\cot^2(x)\\csc^2(x)",
+      "-9\\cot^3(x)\\csc^2(x)"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 465,
+    "topic": "derivatives (trig)",
+    "latex": "\\text{Given }y=\\sec^2(x),\\text{ find }\\frac{dy}{dx}.",
+    "options": [
+      "2\\sec(x)\\tan(x)",
+      "2\\sec^2(x)\\tan(x)",
+      "\\sec(x)\\tan(x)",
+      "2\\tan^2(x)"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 466,
+    "topic": "derivatives (trig)",
+    "latex": "\\text{Given }y=3\\sin(x),\\text{ find }\\frac{dy}{dx}.",
+    "options": [
+      "3\\sin(x)",
+      "-3\\sin(x)",
+      "3\\cos(x)",
+      "\\cos(x)"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 467,
+    "topic": "derivatives (trig)",
+    "latex": "\\text{Given }f(x)=-3\\sec(2x),\\text{ find }f'(x).",
+    "options": [
+      "-6\\sec(2x)\\tan(2x)",
+      "6\\sec(2x)\\tan(2x)",
+      "-3\\sec(2x)\\tan(2x)",
+      "-12\\sec(2x)\\tan(2x)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 468,
+    "topic": "derivatives (trig)",
+    "latex": "\\text{Given }y=3\\cot(2x),\\text{ find }\\frac{dy}{dx}.",
+    "options": [
+      "6\\csc^2(2x)",
+      "-3\\csc^2(2x)",
+      "-6\\csc^2(2x)",
+      "-12\\csc^2(2x)"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 469,
+    "topic": "derivatives (trig)",
+    "latex": "\\text{Given }y=\\cos^3(x),\\text{ find }\\frac{dy}{dx}.",
+    "options": [
+      "-3\\cos^2(x)\\sin(x)",
+      "3\\cos^2(x)\\sin(x)",
+      "-\\cos^2(x)\\sin(x)",
+      "-3\\cos(x)\\sin(x)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 470,
+    "topic": "derivatives (trig)",
+    "latex": "\\text{Given }y=\\tan^2(x),\\text{ find }\\frac{dy}{dx}.",
+    "options": [
+      "\\tan(x)\\sec^2(x)",
+      "2\\tan(x)\\sec(x)",
+      "2\\tan(x)\\sec^2(x)",
+      "2\\sec^2(x)"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 471,
+    "topic": "derivatives (trig)",
+    "latex": "\\text{Given }y=3\\sec(2x),\\text{ find }\\frac{dy}{dx}.",
+    "options": [
+      "3\\sec(2x)\\tan(2x)",
+      "12\\sec(2x)\\tan(2x)",
+      "6\\sec(2x)\\tan(2x)",
+      "-6\\sec(2x)\\tan(2x)"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": 472,
+    "topic": "derivatives (trig)",
+    "latex": "\\text{Given }y=\\sec^4(x),\\text{ find }\\frac{dy}{dx}.",
+    "options": [
+      "4\\sec^3(x)\\tan(x)",
+      "4\\sec^4(x)\\tan(x)",
+      "2\\sec^3(x)\\tan(x)",
+      "4\\sec^3(x)"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 473,
+    "topic": "derivatives (trig)",
+    "latex": "\\text{Given }y=-\\csc(3x),\\text{ find }\\frac{dy}{dx}.",
+    "options": [
+      "-3\\csc(3x)\\cot(3x)",
+      "3\\csc(3x)\\cot(3x)",
+      "\\csc(3x)\\cot(3x)",
+      "3\\csc(3x)"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": 474,
+    "topic": "derivatives (trig)",
+    "latex": "\\text{Given }f(x)=-3\\cot^2(x),\\text{ find }f'(x).",
+    "options": [
+      "6\\cot(x)\\csc^2(x)",
+      "-6\\cot(x)\\csc^2(x)",
+      "3\\cot(x)\\csc^2(x)",
+      "6\\cot^2(x)\\csc^2(x)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 475,
+    "topic": "tangent lines with derivatives",
+    "latex": "\\text{Let }f\\text{ be a differentiable function with }f(-5)=-3\\text{ and }f'(-5)=3.\\text{ Let }g(x)=\\frac{f(x)}{x^2}.\\text{ Write the equation of the line tangent to the graph of }g\\text{ at }x=-5.",
+    "options": [
+      "y=\\frac{9}{125}x+\\frac{6}{25}",
+      "y=-\\frac{9}{125}x-\\frac{6}{25}",
+      "y=\\frac{3}{25}x+\\frac{3}{5}",
+      "y=\\frac{9}{125}x-\\frac{6}{25}"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 476,
+    "topic": "tangent lines with derivatives",
+    "latex": "\\text{Let }f\\text{ be a differentiable function with }f(-1)=-3,f'(-1)=-4,f(2)=-2,\\text{ and }f'(2)=6.\\text{ Let }g(x)=f(2x^2).\\text{ Write the equation of the line tangent to the graph of }g\\text{ at }x=-1.",
+    "options": [
+      "y=-24x-26",
+      "y=24x+22",
+      "y=-24x-22",
+      "y=24x-26"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 477,
+    "topic": "tangent lines with derivatives",
+    "latex": "\\text{Let }f\\text{ be a differentiable function with }f(3)=1\\text{ and }f'(3)=4.\\text{ Let }g(x)=2[f(x)]^2.\\text{ Write the equation of the line tangent to the graph of }g\\text{ at }x=3.",
+    "options": [
+      "y=16x-42",
+      "y=8x-22",
+      "y=16x-46",
+      "y=24x-70"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 478,
+    "topic": "tangent lines with derivatives",
+    "latex": "\\text{Let }f\\text{ be a differentiable function with }f(-2)=-2\\text{ and }f'(-2)=2.\\text{ Let }g(x)=3xf(x).\\text{ Write the equation of the line tangent to the graph of }g\\text{ at }x=-2.",
+    "options": [
+      "y=-6",
+      "y=6x+6",
+      "y=-12x-30",
+      "y=12x+18"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 479,
+    "topic": "tangent lines with derivatives",
+    "latex": "\\text{Let }f\\text{ be a differentiable function with }f(-1)=-3\\text{ and }f'(-1)=-4.\\text{ Let }g(x)=(3x^2-3)f(x).\\text{ Write the equation of the line tangent to the graph of }g\\text{ at }x=-1.",
+    "options": [
+      "y=18x+18",
+      "y=-18x-18",
+      "y=18x",
+      "y=-18x"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 480,
+    "topic": "tangent lines with derivatives",
+    "latex": "\\text{Let }f\\text{ be a differentiable function with }f(-2)=2\\text{ and }f'(-2)=3.\\text{ Let }g(x)=\\frac{f(x)}{x}.\\text{ Write the equation of the line tangent to the graph of }g\\text{ at }x=-2.",
+    "options": [
+      "y=-x-3",
+      "y=x+1",
+      "y=-x-1",
+      "y=x-3"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 481,
+    "topic": "tangent lines with derivatives",
+    "latex": "\\text{Let }f\\text{ be a differentiable function with }f(1)=-2\\text{ and }f'(1)=6.\\text{ Let }g(x)=\\frac{2x-6}{f(x)}.\\text{ Write the equation of the line tangent to the graph of }g\\text{ at }x=1.",
+    "options": [
+      "y=4x-2",
+      "y=-4x+2",
+      "y=4x+2",
+      "y=-4x-2"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 482,
+    "topic": "tangent lines with derivatives",
+    "latex": "\\text{Let }f\\text{ be a differentiable function with }f(-1)=4,f'(-1)=-5,f(-2)=5,\\text{ and }f'(-2)=6.\\text{ Let }g(x)=f(2x).\\text{ Write the equation of the line tangent to the graph of }g\\text{ at }x=-1.",
+    "options": [
+      "y=12x+29",
+      "y=-12x-19",
+      "y=6x+17",
+      "y=12x+17"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 483,
+    "topic": "tangent lines with derivatives",
+    "latex": "\\text{Let }f\\text{ be a differentiable function with }f(-5)=2,f'(-5)=1,f(-6)=3,\\text{ and }f'(-6)=-3.\\text{ Let }g(x)=f(2x+4).\\text{ Write the equation of the line tangent to the graph of }g\\text{ at }x=-5.",
+    "options": [
+      "y=-6x-27",
+      "y=6x+33",
+      "y=-3x-12",
+      "y=-6x-33"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 484,
+    "topic": "tangent lines with derivatives",
+    "latex": "\\text{Let }f\\text{ be a differentiable function with }f(5)=-1\\text{ and }f'(5)=-6.\\text{ Let }g(x)=2[f(x)]^3.\\text{ Write the equation of the line tangent to the graph of }g\\text{ at }x=5.",
+    "options": [
+      "y=-36x+178",
+      "y=36x-182",
+      "y=-12x+58",
+      "y=-36x+182"
+    ],
+    "answerIndex": 0
+  }
+]

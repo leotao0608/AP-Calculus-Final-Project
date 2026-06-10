@@ -360,3 +360,71 @@ input:focus { outline: none; border-color: #fff; }
 #pass-card.open {
   display: flex;
 }
+
+#leaderboard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.leaderboard-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #333;
+  font-size: 0.9rem;
+}
+
+.leaderboard-row.highlight {
+  border-color: #fff;
+}
+
+.lb-rank { color: #888; width: 2rem; }
+.lb-name { flex: 1; }
+.lb-level { color: #fff; }
+
+#site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #a1a1a1;
+  padding: 0.4rem;
+  pointer-events: none;
+}
+
+#site-footer .name-btn {
+  pointer-events: all;
+}
+.name-btn {
+  background: none;
+  border: none;
+  color: #666;
+  font-family: monospace;
+  font-size: 0.7rem;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+.name-btn:hover { color: #fff; }
+
+#signature-card {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #000;
+  border: 1px solid #fff;
+  padding: 2rem;
+  z-index: 300;
+  flex-direction: column;
+  align-items: center;
+}
+#signature-card.open { display: flex; }
+#signature-img { max-width: 500px; max-height: 400px; }

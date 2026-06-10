@@ -14,6 +14,7 @@ const levels = [
   { num: 1, name: 'Level 1', difficulty: 'Difficulty: ★' },
   { num: 2, name: 'Level 2', difficulty: 'Difficulty: ★★' },
   { num: 3, name: 'Level 3', difficulty: 'Difficulty: ★★★' },
+  { num: 4, name: 'Level 4', difficulty: 'Difficulty: ★★★★' },
 ];
 
 // ── auto save timer ───────────────────────────────────
@@ -138,7 +139,7 @@ async function selectAnswer(index) {
     buttons[currentQuestion.answerIndex].classList.add('correct');
     document.getElementById('q-feedback').textContent = '✗ Wrong. You stay.';
     hp--;
-    document.getElementById('hud-hp').textContent = `HP: ${hp}`;
+    document.getElementById('hud-hp').textContent = `Chances: ${hp}`;
     pendingMove = null;
     document.getElementById('btn-next').textContent = 'CLOSE';
 
@@ -176,7 +177,7 @@ async function startGame(levelNum = 1) {
   score           = 0;
   isMoving        = false;
   showScreen('screen-game');
-  document.getElementById('hud-hp').textContent    = 'HP: 3';
+  document.getElementById('hud-hp').textContent    = 'Chances: 3';
   document.getElementById('hud-score').textContent = 'SCORE: 0';
   document.getElementById('question-card').classList.remove('open');
   document.getElementById('hud-topic').textContent = `LEVEL ${currentLevel}`;
@@ -194,7 +195,7 @@ async function resetGame(level) {
   score           = 0;
   currentLevel    = level;
   isMoving        = false;
-  document.getElementById('hud-hp').textContent    = 'HP: 3';
+  document.getElementById('hud-hp').textContent    = 'Chances: 3';
   document.getElementById('hud-score').textContent = 'SCORE: 0';
   document.getElementById('question-card').classList.remove('open');
   document.getElementById('hud-topic').textContent = `LEVEL ${level}`;

@@ -105,6 +105,13 @@
       
       <button class="btn-primary" onclick="showScreen('screen-menu')" id="review-back">BACK</button>
     </div>
+    <div id="screen-leaderboard" class="screen">
+      <div class="auth-card" style="width:480px">
+        <h1 class="logo">LEADERBOARD</h1>
+        <div id="leaderboard-list"></div>
+        <button class="btn-primary" onclick="showScreen('screen-menu')">BACK</button>
+      </div>
+    </div>
     <div id="confirm-card" class="alert-card">
       <p id="confirm-message">Are you sure?</p>
       <div style="display:flex;gap:1rem;justify-content:center;margin-top:1rem">
@@ -121,7 +128,10 @@
     <script src="maze.js"></script>
     <script src="save.js"></script>
     <script src="review.js"></script>
+    <script src="leaderboard.js"></script>
     <script src="game.js"></script>
+    <script src="mathSignature.js"></script>
+
     
   <script>
     function switchTab(tab) {
@@ -131,5 +141,14 @@
       event.target.classList.add('active');
     }
   </script>
+  
+  <div id="site-footer">
+    <span>Developed by: <button class="name-btn" onclick="showSignature('xichen')">Xichen Tao</button> · <button class="name-btn" onclick="showSignature('allen')">Allen Feng</button></span>
+  </div>
+
+  <div id="signature-card">
+    <img id="signature-img" src="" alt="Math Signature" />
+    <button class="btn-primary" style="margin-top:1rem;width:auto;padding:0.4rem 1.5rem" onclick="document.getElementById('signature-card').classList.remove('open')">CLOSE</button>
+  </div>
 </body>
 </html>
