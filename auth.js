@@ -1,6 +1,7 @@
 function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.getElementById(id).classList.add('active');
+  document.getElementById('site-footer').style.display = (id === 'screen-menu') ? 'block' : 'none';
 }
 
 async function register() {
