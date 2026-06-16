@@ -17,7 +17,7 @@
     "id": 302,
     "topic": "definition of derivative",
     "latex": "\\text{For the function }f(x)=x^2+4x-8,\\text{ find the slope of the secant line between }x=-6\\text{ and }x=-1.",
-    "options": ["-5", "-1", "-7", "1"],
+    "options": ["-5", "-3", "-7", "1"],
     "answerIndex": 1
   },
   {
@@ -180,7 +180,7 @@
       "y=-14x-53",
       "y=-7x-11"
     ],
-    "answerIndex": 2
+    "answerIndex": 0
   },
   {
     "id": 319,

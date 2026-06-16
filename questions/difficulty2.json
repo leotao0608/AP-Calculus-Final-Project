@@ -66,8 +66,8 @@
     "id": 209,
     "topic": "limits",
     "latex": "\\lim_{x\\to7}\\frac{-3x+21}{x^2-3x-28}",
-    "options": ["-\\frac13","0","\\frac13","1"],
-    "answerIndex": 0
+    "options": ["-\\frac13","0","\\frac13","\\frac{3}{11}"],
+    "answerIndex": 3
   },
   {
     "id": 210,
@@ -80,8 +80,8 @@
     "id": 211,
     "topic": "limits",
     "latex": "\\lim_{x\\to-6}\\frac{x^2-8x+12}{x^2-36}",
-    "options": ["-\\frac53","\\frac53","-\\frac43","\\frac43"],
-    "answerIndex": 0
+    "options": ["-\\frac53","\\frac53","-\\frac43","DNE"],
+    "answerIndex": 3
   },
   {
     "id": 212,
@@ -144,7 +144,7 @@
     "topic": "limits",
     "latex": "\\lim_{x\\to\\infty}\\frac{\\sqrt{-2+49x^4}}{3x+10x^3}",
     "options": ["\\frac{49}{10}","\\frac{7}{10}","0","DNE"],
-    "answerIndex": 1
+    "answerIndex": 2
   },
   {
     "id": 221,
@@ -172,7 +172,7 @@
     "topic": "limits",
     "latex": "\\lim_{x\\to\\infty}\\frac{24-19x^3+2x^6}{10x^3-8x^4+25-20x}",
     "options": ["-\\infty","+\\infty","0","DNE"],
-    "answerIndex": 1
+    "answerIndex": 0
   },
   {
     "id": 225,
@@ -246,7 +246,7 @@
       "k=-12",
       "k=16",
       "k=20",
-      "k=12"
+      "k=6"
     ],
     "answerIndex": 3
   },
