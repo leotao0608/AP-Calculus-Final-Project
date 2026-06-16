@@ -56,6 +56,9 @@ node_modules/
 # Optional REPL history
 .node_repl_history
 
+#ignore mp4 file
+*.mp4
+
 # Output of 'npm pack'
 *.tgz
 
