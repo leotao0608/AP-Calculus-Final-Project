@@ -428,3 +428,18 @@ input:focus { outline: none; border-color: #fff; }
 }
 #signature-card.open { display: flex; }
 #signature-img { max-width: 500px; max-height: 400px; }
+
+#video-card {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #000;
+  border: 1px solid #fff;
+  padding: 2rem;
+  z-index: 300;
+  flex-direction: column;
+  align-items: center;
+}
+#video-card.open { display: flex; }

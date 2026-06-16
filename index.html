@@ -144,8 +144,14 @@
   
   <div id="site-footer">
     <span>Developed by: <button class="name-btn" onclick="showSignature('xichen')">Xichen Tao</button> · <button class="name-btn" onclick="showSignature('allen')">Allen Feng</button></span>
+    <span> · <button class="name-btn" onclick="showVideo()">▶ Demo</button></span>
   </div>
-
+  <div id="video-card">
+    <video id="demo-video" controls width="720">
+      <source src="ap-math-final-recording.mp4" type="video/mp4">
+    </video>
+    <button class="btn-primary" style="margin-top:1rem;width:auto;padding:0.4rem 1.5rem" onclick="closeVideo()">CLOSE</button>
+  </div>
   <div id="signature-card">
     <img id="signature-img" src="" alt="Math Signature" />
 

@@ -19,3 +19,14 @@ function showSignature(name) {
 
   MathJax.typesetPromise([formula]);
 }
+
+function showVideo() {
+  document.getElementById('video-card').classList.add('open');
+}
+
+function closeVideo() {
+  const video = document.getElementById('demo-video');
+  video.pause();
+  video.currentTime = 0;
+  document.getElementById('video-card').classList.remove('open');
+}
